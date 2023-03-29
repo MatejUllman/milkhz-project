@@ -20,7 +20,8 @@ CREATE or replace TABLE `recepty` (
   `nazev` varchar(30) NOT NULL,
   `postup` varchar(80) NOT NULL,
   `dobaPripravy` varchar(30) NOT NULL,
-  `narocnost` varchar(30) not null
+  `narocnost` varchar(30) not null,
+  `obrazek` varchar(100) not null
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -31,7 +32,8 @@ CREATE or replace TABLE `oblibeneRecepty` (
   `nazev` varchar(30) NOT NULL,
   `postup` varchar(80) NOT NULL,
   `dobaPripravy` varchar(30) NOT NULL,
-  `narocnost` varchar(30) not null
+  `narocnost` varchar(30) not null,
+  `obrazek` varchar(100) not null
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -42,7 +44,8 @@ CREATE or replace TABLE `odlozeneRecepty` (
   `nazev` varchar(30) NOT NULL,
   `postup` varchar(80) NOT NULL,
   `dobaPripravy` varchar(30) NOT NULL,
-  `narocnost` varchar(30) not null
+  `narocnost` varchar(30) not null,
+  `obrazek` varchar(100) not null
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
