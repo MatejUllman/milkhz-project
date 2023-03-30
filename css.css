@@ -31,3 +31,16 @@ li a:hover:not(.active) {
 .active {
   background-color: rgb(6, 26, 64);
 }
+#Doporucujeme{
+    width: 50vw;
+    margin: auto;
+    margin-top: 50px ;
+
+
+}
+#doporuceno{
+    background-color: whitesmoke;
+    width: 50vw;
+    margin: auto;
+    height: 400px;
+}
