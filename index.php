@@ -21,9 +21,17 @@
       <div id="doporuceno">
         <form action="serverPridaniReceptu.php" method="post">
 
-
-
-
+        <label for="nazev"></label>
+        <input type="text" name="nazev" id="nazev"><br>
+        <label for="doba"></label>
+        <input type="text" name="doba" id="doba"><br>
+        <label for="postup"></label>
+        <textarea name="postup" id="postup" cols="80" rows="30"></textarea><br>
+        <label for="obr"></label>
+        <input type="text" name="obr" id="obr"><br>
+        <input type="radio" name="nar" value="snadné" ><label>obtížnost</label>
+        <input type="radio" name="nar" value="střední" ><label>obtížnost</label>
+        <input type="radio" name="nar" value="náročné" ><label>obtížnost</label>
         </form>
       </div>
 
