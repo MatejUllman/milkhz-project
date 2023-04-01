@@ -32,7 +32,7 @@ li a:hover:not(.active) {
   background-color: rgb(6, 26, 64);
 }
 #Doporucujeme{
-    width: 50vw;
+    width: 40vw;
     margin: auto;
     margin-top: 50px ;
 
@@ -43,7 +43,7 @@ li a:hover:not(.active) {
     width: 40%;
     margin: auto;
     height: 500px;
-    display: inline-block;
+    
 }
 #recept{
   margin-left: 5%;
