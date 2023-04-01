@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Přidání</title>
+    <title>Domů</title>
     <link rel="stylesheet" href="css.css">
     <style>
         #doporuceno{
@@ -12,15 +12,6 @@
             width: 50vw;
             margin: auto;
             height: 500px;
-        }
-        label{
-            margin-left: 10px;
-        }
-        input{
-            margin-left: 10px;
-        }
-        textarea{
-            margin-left: 10px;
         }
     </style>
 </head>
@@ -43,7 +34,7 @@
         <label for="doba">doba přípravy v minutách:</label><br>
         <input type="text" name="doba" id="doba" required><br>
         <label for="postup">postup:</label><br>
-        <textarea name="postup" id="postup" cols="96" rows="14" required></textarea><br>
+        <textarea name="postup" id="postup" cols="106" rows="14" required></textarea><br>
         <label for="obr">obrázek:</label><br>
         <input type="text" name="obr" id="obr"><br>
         <label >náročnost:</label><br>
