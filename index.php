@@ -38,9 +38,9 @@
         <label for="obr">obrázek:</label><br>
         <input type="text" name="obr" id="obr"><br>
         <label >náročnost:</label><br>
-        <input type="radio" name="nar" value="snadné" checked><label>snadné</label>
-        <input type="radio" name="nar" value="střední" ><label>střední</label>
-        <input type="radio" name="nar" value="náročné" ><label>náročné</label><br>
+        <input type="radio" name="nar" value="snadné" checked id="n"><label for="n">snadné</label>
+        <input type="radio" name="nar" value="střední" id="m" ><label for="m">střední</label>
+        <input type="radio" name="nar" value="náročné" id="l"><label for="l">náročné</label><br>
         <input type="submit" value="submit">
         </form>
       </div>
