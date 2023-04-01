@@ -9,10 +9,11 @@
 </head>
 <body style="background-color: rgb(185, 214, 242);">
     <ul>
-        <li><a class="active" href="HlavniStrana.html">Domů</a></li>
+        <li><a  href="HlavniStrana.html">Domů</a></li>
         <li><a href="">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
         <li><a href="">Na později</a></li>
+        <li><a href="" class = "active">přidat recepty</a></li>
         <li style="float:right"><a href="">Přihlásit</a></li>
       </ul>
       <div id="Doporucujeme"><h1 >Doporučujeme</h1></div>
