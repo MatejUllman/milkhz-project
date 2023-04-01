@@ -19,7 +19,12 @@
       <div id="Doporucujeme"><h1 >Doporučujeme</h1></div>
       
       <div id="doporuceno">
-    
+        <form action="serverPridaniReceptu.php" method="post">
+
+
+
+
+        </form>
       </div>
 
 
