@@ -40,9 +40,9 @@ li a:hover:not(.active) {
 }
 #doporuceno{
     background-color: whitesmoke;
-    width: 50vw;
+    width: 40%;
     margin: auto;
-    height: 400px;
+    height: 500px;
 }
 #recept{
   margin-left: 30px;
