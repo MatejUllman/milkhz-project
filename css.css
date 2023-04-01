@@ -44,3 +44,6 @@ li a:hover:not(.active) {
     margin: auto;
     height: 400px;
 }
+#recept{
+  margin-left: 30px;
+}
