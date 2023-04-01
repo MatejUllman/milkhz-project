@@ -35,8 +35,9 @@
         <input type="text" name="doba" id="doba" required><br>
         <label for="postup">postup:</label><br>
         <textarea name="postup" id="postup" cols="106" rows="14" required></textarea><br>
-        <label for="obr">náročnost:</label><br>
+        <label for="obr">obrázek:</label><br>
         <input type="text" name="obr" id="obr"><br>
+        <label >náročnost:</label><br>
         <input type="radio" name="nar" value="snadné" checked><label>snadné</label>
         <input type="radio" name="nar" value="střední" ><label>střední</label>
         <input type="radio" name="nar" value="náročné" ><label>náročné</label><br>
