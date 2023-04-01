@@ -18,7 +18,7 @@ ALTER TABLE `uzivatel` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRI
 CREATE or replace TABLE `recepty` (
   `id` int(11) NOT NULL,
   `nazev` varchar(30) NOT NULL,
-  `postup` varchar(80) NOT NULL,
+  `postup` varchar(250) NOT NULL,
   `dobaPripravy` varchar(30) NOT NULL,
   `narocnost` varchar(30) not null,
   `obrazek` varchar(100) not null
@@ -30,7 +30,7 @@ ALTER TABLE `recepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIM
 CREATE or replace TABLE `oblibeneRecepty` (
   `id` int(11) NOT NULL,
   `nazev` varchar(30) NOT NULL,
-  `postup` varchar(80) NOT NULL,
+  `postup` varchar(250) NOT NULL,
   `dobaPripravy` varchar(30) NOT NULL,
   `narocnost` varchar(30) not null,
   `obrazek` varchar(100) not null
@@ -42,7 +42,7 @@ ALTER TABLE `oblibeneRecepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, 
 CREATE or replace TABLE `odlozeneRecepty` (
   `id` int(11) NOT NULL,
   `nazev` varchar(30) NOT NULL,
-  `postup` varchar(80) NOT NULL,
+  `postup` varchar(250) NOT NULL,
   `dobaPripravy` varchar(30) NOT NULL,
   `narocnost` varchar(30) not null,
   `obrazek` varchar(100) not null
@@ -50,3 +50,6 @@ CREATE or replace TABLE `odlozeneRecepty` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ALTER TABLE `odlozeneRecepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`id`);
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost) 
+VALUES('Sekaná','Maso vložíme do misky, přidáme kousky rohlíků, majoránku, sůl, pepř, česnek a cokoliv ještě chcete. Směs pořádně promícháme klidně 5 minut. Ze směsi utvořte objekt tvaru doutníkového UFO a vložte do pekáče. Celou sekanou potřeme vodou a předehřejeme troubu na 200 stupňů. Potom stlumte troubu na 150 stupňů a pečte sekanou třeba 45 minut nebo více dle potřeby. Gratuluju máte ůžasnou sekanou.','$dost na to, aby jsi zhlédli 3 epizody Dva a půl chlapa','$zvládneš i ty')
