@@ -43,7 +43,8 @@ li a:hover:not(.active) {
     width: 40%;
     margin: auto;
     height: 500px;
+    display: inline-block;
 }
 #recept{
-  margin-left: 30px;
+  margin-left: 5%;
 }
