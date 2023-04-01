@@ -18,8 +18,8 @@ ALTER TABLE `uzivatel` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRI
 CREATE or replace TABLE `recepty` (
   `id` int(11) NOT NULL,
   `nazev` varchar(30) NOT NULL,
-  `postup` varchar(250) NOT NULL,
-  `dobaPripravy` varchar(30) NOT NULL,
+  `postup` varchar(400) NOT NULL,
+  `dobaPripravy` varchar(80) NOT NULL,
   `narocnost` varchar(30) not null,
   `obrazek` varchar(100) not null
   
@@ -30,8 +30,8 @@ ALTER TABLE `recepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIM
 CREATE or replace TABLE `oblibeneRecepty` (
   `id` int(11) NOT NULL,
   `nazev` varchar(30) NOT NULL,
-  `postup` varchar(250) NOT NULL,
-  `dobaPripravy` varchar(30) NOT NULL,
+  `postup` varchar(400) NOT NULL,
+  `dobaPripravy` varchar(80) NOT NULL,
   `narocnost` varchar(30) not null,
   `obrazek` varchar(100) not null
   
@@ -42,8 +42,8 @@ ALTER TABLE `oblibeneRecepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, 
 CREATE or replace TABLE `odlozeneRecepty` (
   `id` int(11) NOT NULL,
   `nazev` varchar(30) NOT NULL,
-  `postup` varchar(250) NOT NULL,
-  `dobaPripravy` varchar(30) NOT NULL,
+  `postup` varchar(400) NOT NULL,
+  `dobaPripravy` varchar(80) NOT NULL,
   `narocnost` varchar(30) not null,
   `obrazek` varchar(100) not null
   
