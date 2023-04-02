@@ -82,6 +82,7 @@
 
 
 ?>
- <script src="text.js"></script> 
+
+ <script src="text.js"></script>
 </body>
 </html>
