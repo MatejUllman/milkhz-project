@@ -36,17 +36,19 @@
        // zde udělej css-ka
         echo "
         <div style='display:flex;'>
-        <div>
+        <div style=' width:127px;'>
         <h1>$row->nazev</h1><br>
         <!--<p>$row->postup</p>-->
         <p>Náročnost: $row->narocnost</p>
         <!-- style='margin-left:250px;' -->
         </div>
-        <div >
-        <img src='$row->obrazek ' width='100px' height='100px'>
+        <div style='margin-left:100px; width:327px;'>
+        <img src='$row->obrazek ' width='120px' height='105px'>
         <p>doba přípravy: $row->dobaPripravy</p>
-        </div><br>
-        <button type='button'>zobrazit postup</button> 
+        </div>
+        <div style='margin-top:50px;'>
+        <button type='button' >zobrazit postup</button> 
+        </div>
         </div>
         ";
         
