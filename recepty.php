@@ -36,38 +36,39 @@
            
             vypis($row);
         }
-     }
-     function vypis($row){
-       // zde udělej css-ka
-        echo "
-        <div style='display:flex;'>
-        <div style=' width:127px;'>
-        <h1>$row->nazev</h1><br>
-        <!--<p>$row->postup</p>-->
-        <p>Náročnost: $row->narocnost</p>
-        <!-- style='margin-left:250px;' -->
-        </div>
-        <div style='margin-left:100px; width:327px;'>
-        <img src='$row->obrazek ' width='120px' height='105px'>
-        <p>doba přípravy: $row->dobaPripravy</p>
-        </div>
-        <div style='margin-top:50px;'>
-        <button type='button' class='b' >zobrazit postup</button>
-        <button type='button' class='b'>přidat do oblíbených</button>  
-        <button type='button' class='b'>přečíst později</button> 
-        </div>
-        </div>
-        ";
-        
-     }
-        
+     }  
     ?>
-    
-    
     </div>
         <div style="float: right; margin-right: 5%;" id="doporuceno">
         <h2>Zde se objeví postu přípravy receptu</h2>
     </div>
 </div>
+<?php 
+ function vypis($row){
+    // zde udělej css-ka
+     echo "
+     <div style='display:flex;'>
+     <div style=' width:127px;'>
+     <h1>$row->nazev</h1><br>
+     <!--<p>$row->postup</p>-->
+     <p>Náročnost: $row->narocnost</p>
+     <!-- style='margin-left:250px;' -->
+     </div>
+     <div style='margin-left:100px; width:327px;'>
+     <img src='$row->obrazek ' width='120px' height='105px'>
+     <p>doba přípravy: $row->dobaPripravy</p>
+     </div>
+     <div style='margin-top:50px;'>
+     <button type='button' class='b' >zobrazit postup</button>
+     <button type='button' class='b'>přidat do oblíbených</button>  
+     <button type='button' class='b'>přečíst později</button> 
+     </div>
+     </div>
+     ";
+     
+  }
+
+
+?>
 </body>
 </html>
