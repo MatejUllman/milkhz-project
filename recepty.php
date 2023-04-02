@@ -15,7 +15,7 @@
 <body style="background-color: rgb(185, 214, 242);">
     <ul>
         <li><a  href="HlavniStrana.html">Domů</a></li>
-        <li><a class="active" href="recepty.html">Recepty</a></li>
+        <li><a class="active" href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
         <li><a href="">Na později</a></li>
         <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
