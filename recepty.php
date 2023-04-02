@@ -21,6 +21,15 @@
         <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
         <li style="float:right"><a href="">Přihlásit</a></li>
       </ul>
+      <!-- 
+        
+      
+      
+      zde udělej css-ka 
+    
+    
+    
+    -->
       <div id="recept"><h1 >Recepty</h1></div>
 <div style="display:flex; ">
       <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;" id="doporuceno">
