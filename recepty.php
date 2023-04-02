@@ -32,7 +32,7 @@
     -->
       <div id="recept"><h1 >Recepty</h1></div>
 <div style="display:flex; ">
-      <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;" class="doporuceno">
+      <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;" id="doporuceno">
       <?php
      $connect = new mysqli("localhost","root","","receptar");
 
@@ -48,7 +48,8 @@
      }  
     ?>
     </div>
-        <div style="float: right; margin-right: 5%;" class="doporuceno" id='neco'>
+        <div style="float: right; margin-right: 5%;background-color: whitesmoke;width: 40%;margin: auto;height: 500px;
+  " class="doporuceno" id='neco'>
         <h2>Zde se objeví postu přípravy receptu</h2>
     </div>
 </div>

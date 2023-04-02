@@ -45,11 +45,8 @@ li a:hover:not(.active) {
     height: 500px;
     
 }
-.doporuceno{
-  background-color: whitesmoke;
-  width: 40%;
-  margin: auto;
-  height: 500px;
+.neco{
+  background-color: whitesmoke;width: 40%;margin: auto;height: 500px;
   
 }
 #recept{

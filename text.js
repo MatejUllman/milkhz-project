@@ -3,7 +3,7 @@
 
 function vypis(id){
     let element = document.getElementById(id).value;
-
-    document.getElementById('neco').appendChild(element);
+    let el = "<p>"+element+"</p>";
+    document.getElementById('neco').appendChild(el);
     console.log(element);
 }
