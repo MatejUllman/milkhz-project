@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recepty</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+        .b{
+            margin:5px;
+        }
+    </style>
 </head>
 <body style="background-color: rgb(185, 214, 242);">
     <ul>
@@ -47,7 +52,9 @@
         <p>doba přípravy: $row->dobaPripravy</p>
         </div>
         <div style='margin-top:50px;'>
-        <button type='button' >zobrazit postup</button> 
+        <button type='button' class='b' >zobrazit postup</button>
+        <button type='button' class='b'>přidat do oblíbených</button>  
+        <button type='button' class='b'>přečíst později</button> 
         </div>
         </div>
         ";
