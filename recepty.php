@@ -17,8 +17,8 @@
         <li style="float:right"><a href="">Přihlásit</a></li>
       </ul>
       <div id="recept"><h1 >Recepty</h1></div>
-<div style="display:flex;">
-      <div style="margin-left: 5%; display: inline-block; display:flex;" id="doporuceno">
+<div style="display:flex; ">
+      <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;" id="doporuceno">
       <?php
      $connect = new mysqli("localhost","root","","receptar");
 
@@ -34,7 +34,9 @@
      }
      function vypis($row){
        // zde udělej css-ka
-        echo "<div>
+        echo "
+        <div style='display:flex;'>
+        <div>
         <h1>$row->nazev</h1><br>
         <!--<p>$row->postup</p>-->
         <p>Náročnost: $row->narocnost</p>
@@ -43,6 +45,7 @@
         <div >
         <img src='$row->obrazek ' width='100px' height='100px'>
         <p>doba přípravy: $row->dobaPripravy</p>
+        </div><br>
         <button type='button'>zobrazit postup</button> 
         </div>
         ";
