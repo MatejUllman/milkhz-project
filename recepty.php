@@ -32,7 +32,7 @@
     -->
       <div id="recept"><h1 >Recepty</h1></div>
 <div style="display:flex; ">
-      <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;" id="doporuceno">
+      <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;" class="doporuceno">
       <?php
      $connect = new mysqli("localhost","root","","receptar");
 
@@ -48,14 +48,16 @@
      }  
     ?>
     </div>
-        <div style="float: right; margin-right: 5%;" id="doporuceno">
+        <div style="float: right; margin-right: 5%;" class="doporuceno" id='neco'>
         <h2>Zde se objeví postu přípravy receptu</h2>
     </div>
 </div>
 <?php 
  function vypis($row){
     // zde udělej css-ka
+    
      echo "
+     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
      <div style='display:flex;'>
      <div style=' width:127px;'>
      <h1>$row->nazev</h1><br>
@@ -68,7 +70,7 @@
      <p>doba přípravy: $row->dobaPripravy</p>
      </div>
      <div style='margin-top:50px;'>
-     <button type='button' class='b' >zobrazit postup</button>
+     <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button>
      <button type='button' class='b'>přidat do oblíbených</button>  
      <button type='button' class='b'>přečíst později</button> 
      </div>
@@ -79,5 +81,6 @@
 
 
 ?>
+ <script src="text.js"></script> 
 </body>
 </html>
