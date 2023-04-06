@@ -32,7 +32,7 @@
     -->
       <div id="recept"><h1 >Recepty</h1></div>
 <div style="display:flex; ">
-      <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;" id="doporuceno">
+      <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;overflow:auto" id="doporuceno">
       <?php
      $connect = new mysqli("localhost","root","","receptar");
 
@@ -48,8 +48,7 @@
      }  
     ?>
     </div>
-        <div style="float: right; margin-right: 5%;background-color: whitesmoke;width: 40%;margin: auto;height: 500px;
-  " class="doporuceno" id='neco'>
+        <div style="float: right; margin-right: 5%;background-color: whitesmoke;width: 40%;margin: auto;height: 500px;;" class="doporuceno" id='neco'>
         <h2>Zde se objeví postup přípravy receptu</h2>
     </div>
 </div>
@@ -58,7 +57,7 @@
     // zde udělej css-ka
     
      echo "
-<div style='border: 2px solid black; width:99.8%; height:190px'>
+<div style='border: 2px solid black; width:99.5%; height:190px'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
     <div style='width:70%;float:left'>
         <img src='$row->obrazek ' width='120px' height='105px'>
