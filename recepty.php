@@ -50,7 +50,7 @@
     </div>
         <div style="float: right; margin-right: 5%;background-color: whitesmoke;width: 40%;margin: auto;height: 500px;
   " class="doporuceno" id='neco'>
-        <h2>Zde se objeví postu přípravy receptu</h2>
+        <h2>Zde se objeví postup přípravy receptu</h2>
     </div>
 </div>
 <?php 
@@ -58,17 +58,40 @@
     // zde udělej css-ka
     
      echo "
-     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
+<div style='border: 2px solid black; width:99.8%; height:200px'>
+<input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
+    <div>
+        <img src='$row->obrazek ' width='180px' height='155px'>
+        <h1 style='position:absolute;display:inline;'>$row->nazev</h1>
+        <p style='display:inline;position:absolute;margin-top:70px'>Náročnost: $row->narocnost</p>
+        <p>doba přípravy: $row->dobaPripravy</p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
      <div style='display:flex;'>
      <div style=' width:127px;'>
-     <h1>$row->nazev</h1><br>
+     
      <!--<p>$row->postup</p>-->
-     <p>Náročnost: $row->narocnost</p>
+     
      <!-- style='margin-left:250px;' -->
      </div>
      <div style='margin-left:100px; width:327px;'>
-     <img src='$row->obrazek ' width='120px' height='105px'>
-     <p>doba přípravy: $row->dobaPripravy</p>
+     
+     
      </div>
      <div style='margin-top:50px;'>
      <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button>
@@ -76,6 +99,7 @@
      <button type='button' class='b'>přečíst později</button> 
      </div>
      </div>
+</div>
      ";
      
   }

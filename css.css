@@ -46,9 +46,24 @@ li a:hover:not(.active) {
     
 }
 .neco{
-  background-color: whitesmoke;width: 40%;margin: auto;height: 500px;
+  background-color: whitesmoke;
+  width: 40%;
+  margin: auto;
+  height: 500px;
   
 }
-#recept{
+#recepty{
   margin-left: 5%;
 }
+#recept{
+  background-color: whitesmoke;
+  width: 40%;
+  margin: auto;
+  height: 500px;
+  border: 10px solid black;
+  margin-left: 5%; 
+  display: inline-block; 
+  display:flex;
+  flex-direction: column;
+}
+
