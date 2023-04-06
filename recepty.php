@@ -58,49 +58,22 @@
     // zde udělej css-ka
     
      echo "
-<div style='border: 2px solid black; width:99.8%; height:200px'>
-<input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
-    <div>
-        <img src='$row->obrazek ' width='180px' height='155px'>
+<div style='border: 2px solid black; width:99.8%; height:190px'>
+    <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
+    <div style='width:60%;float:left'>
+        <img src='$row->obrazek ' width='120px' height='105px'>
         <h1 style='position:absolute;display:inline;'>$row->nazev</h1>
         <p style='display:inline;position:absolute;margin-top:70px'>Náročnost: $row->narocnost</p>
         <p>doba přípravy: $row->dobaPripravy</p>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-     <div style='display:flex;'>
-     <div style=' width:127px;'>
-     
-     <!--<p>$row->postup</p>-->
-     
-     <!-- style='margin-left:250px;' -->
-     </div>
-     <div style='margin-left:100px; width:327px;'>
-     
-     
-     </div>
-     <div style='margin-top:50px;'>
-     <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button>
-     <button type='button' class='b'>přidat do oblíbených</button>  
-     <button type='button' class='b'>přečíst později</button> 
-     </div>
-     </div>
+    <div style='width:39%;float:right'>
+        <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button><br>
+        <button type='button' class='b'>přidat do oblíbených</button><br>
+        <button type='button' class='b'>přečíst později</button> 
+    </div>
 </div>
-     ";
+    <!--<p>$row->postup</p>-->
+";
      
   }
 
