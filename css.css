@@ -58,7 +58,7 @@ li a:hover:not(.active) {
 #recept{
   background-color: whitesmoke;
   width: 40%;
-  margin: auto;
+  /*margin: auto;*/
   height: 500px;
   border: 10px solid black;
   margin-left: 5%; 
