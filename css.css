@@ -66,4 +66,8 @@ li a:hover:not(.active) {
   display:flex;
   flex-direction: column;
 }
+.doporuceno { 
+  float:right;  
+  max-width:500px;  
+ }
 
