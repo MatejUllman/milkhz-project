@@ -30,7 +30,7 @@
     
     
     -->
-      <div id="recept"><h1 >Recepty</h1></div>
+      <h1 style="margin-left: 5%;">Recepty</h1>
 <div style="display:flex; ">
       <div style="margin-left: 5%; display: inline-block; display:flex;flex-direction: column;overflow:auto" id="doporuceno">
       <?php
@@ -61,8 +61,8 @@
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
     <div style='width:70%;float:left'>
         <img src='$row->obrazek ' width='120px' height='105px'>
-        <h1 style='position:absolute;display:inline;'>$row->nazev</h1>
-        <p style='display:inline;position:absolute;margin-top:70px'>Náročnost: $row->narocnost</p>
+        <h1 style='display:inline;margin-top:0;'>$row->nazev</h1>
+        <p style='display:inline;margin-top:70px'>Náročnost: $row->narocnost</p>
         <p>doba přípravy: $row->dobaPripravy</p>
     </div>
     <div style='width:30%;float:right'>
