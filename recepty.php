@@ -48,8 +48,8 @@
      }  
     ?>
     </div>
-        <div style="float:right; margin-right: 5%;background-color: whitesmoke;width: 40%;margin: auto;height: 500px;;" class="doporuceno" id='neco'>
-        <h2 style="margin:auto;width:50%;margin-top:40%">Zde se objeví postup přípravy receptu</h2>
+        <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px" class="doporuceno" id='neco'>
+       
     </div>
 </div>
 <?php 
