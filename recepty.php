@@ -48,8 +48,8 @@
      }  
     ?>
     </div>
-        <div style="float: right; margin-right: 5%;background-color: whitesmoke;width: 40%;margin: auto;height: 500px;;" class="doporuceno" id='neco'>
-        <h2>Zde se objeví postup přípravy receptu</h2>
+        <div style="float:right; margin-right: 5%;background-color: whitesmoke;width: 40%;margin: auto;height: 500px;;" class="doporuceno" id='neco'>
+        <h2 style="margin:auto;width:50%;margin-top:40%">Zde se objeví postup přípravy receptu</h2>
     </div>
 </div>
 <?php 
@@ -57,19 +57,33 @@
     // zde udělej css-ka
     
      echo "
-<div style='border: 2px solid black; width:99.5%; height:190px'>
+<div style='border: 2px solid black; width:99.5%; height:160px'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
-    <div style='width:70%;float:left'>
-        <img src='$row->obrazek ' width='120px' height='105px'>
-        <h1 style='display:inline;margin-top:0;'>$row->nazev</h1>
-        <p style='display:inline;margin-top:70px'>Náročnost: $row->narocnost</p>
+
+    
+    <div style=' width:400px;display:block;float:left'>
+        <img style='float:left' src='$row->obrazek ' width='160px' height='145px'>
+        <div style=''>
+            <h1 style='display:inline;'>$row->nazev</h1><br>
+            <p style='display:inline;'>Náročnost: $row->narocnost</p>
+           
+        </div>
+        <div style=''>
         <p>doba přípravy: $row->dobaPripravy</p>
+        
+        </div>
+        
     </div>
-    <div style='width:30%;float:right'>
+   
+    <div style='float:right;'>
         <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button><br>
         <button type='button' class='b'>přidat do oblíbených</button><br>
         <button type='button' class='b'>přečíst později</button> 
     </div>
+
+    
+
+    
 </div>
     <!--<p>$row->postup</p>-->
 ";}
