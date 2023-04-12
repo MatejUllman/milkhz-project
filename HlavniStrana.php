@@ -61,7 +61,7 @@
     </div>
    
     <div style='float:right;'>
-        <button type='button' class='b' onclick='document.location='vypis($row->id)'>zobrazit postup</button><br>
+        <button type='button' class='b' onclick='vypis($row->id)'href='recepty.php'>zobrazit postup</button><br>
         <button type='button' class='b'>přidat do oblíbených</button><br>
         <button type='button' class='b'>přečíst později</button> 
     </div>
@@ -71,8 +71,7 @@
     
 </div>
     <!--<p>$row->postup</p>-->
-";
-    }
+";}
 
 
     ?>
