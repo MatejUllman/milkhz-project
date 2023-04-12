@@ -16,7 +16,10 @@
         <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
         <li style="float:right"><a href="">Přihlásit</a></li>
       </ul>
-      <div id="Doporucujeme"><h1 >Doporučujeme</h1></div>
+      <div id="Doporucujeme">
+        <h1 >Doporučujeme</h1>
+        <p>Zde se objeví první 3 recepty</p>
+    </div>
       
       <div id="doporuceno">
       <?php
@@ -42,7 +45,7 @@
         // zde udělej css-ka
 
         echo "
-<div style='border: 2px solid black; width:99.5%; height:160px'>
+<div style='border: 2px solid black; width:99.5%; height:33.33%'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
     
@@ -60,10 +63,10 @@
         
     </div>
    
-    <div style='float:right;'>
-        <button type='button' class='b' onclick='vypis($row->id)'href='recepty.php'>zobrazit postup</button><br>
-        <button type='button' class='b'>přidat do oblíbených</button><br>
-        <button type='button' class='b'>přečíst později</button> 
+    <div style='float:right;margin:10px'> 
+        <button type='button' class='b'>přidat do oblíbených</button><br><br>
+        <button type='button' class='b'>přečíst později</button><br><br>
+        <a style='padding:5px;border:2px solid black;' href='recepty.php'>Více podrobností</a>
     </div>
 
     
