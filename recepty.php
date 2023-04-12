@@ -37,13 +37,14 @@
      $connect = new mysqli("localhost","root","","receptar");
 
      $sql = "SELECT * FROM recepty order by id asc;";
-     
+   
      $results = $connect->query($sql);
      if($results == true){
          
         while($row = $results->fetch_object()){
-           
+         
             vypis($row);
+        
         }
      }  
     ?>
