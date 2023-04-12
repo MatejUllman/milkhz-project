@@ -58,7 +58,7 @@
     // zde udělej css-ka
     
      echo "
-<div style='border: 2px solid black; width:99.5%; height:160px'>
+<div style='border: 2px solid black; width:99.5%; height:160px, margin:1px'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
     
