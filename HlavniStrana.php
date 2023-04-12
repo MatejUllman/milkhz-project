@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recepty</title>
+    <title>Domů</title>
     <link rel="stylesheet" href="css.css">
-    <style>
-        .b {
-            margin: 5px;
-        }
-    </style>
 </head>
-
 <body style="background-color: rgb(185, 214, 242);">
     <ul>
-        <li><a href="HlavniStrana.php">Domů</a></li>
-        <li><a class="active" href="recepty.php">Recepty</a></li>
+        <li><a class="active" href="HlavniStrana.php">Domů</a></li>
+        <li><a href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
         <li><a href="">Na později</a></li>
-        <li><a href="pridavani.html">Přidat vlastní recept</a></li>
+        <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
         <li style="float:right"><a href="">Přihlásit</a></li>
-    </ul>
-    <!-- 
-        
+      </ul>
+      <div id="Doporucujeme"><h1 >Doporučujeme</h1></div>
       
-      
-      zde udělej css-ka 
-    
-    
-    
-    -->
-    <h1 style="margin-left: 5%;">Recepty</h1>
-    <div style="display:flex; ">
-        <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto" id="doporuceno">
-            <?php
-            $connect = new mysqli("localhost", "root", "", "receptar");
+      <div id="doporuceno">
+      <?php
+        $connect = new mysqli("localhost", "root", "", "receptar");
 
-            $sql = "SELECT * FROM recepty order by id asc;";
+        $sql = "SELECT * FROM recepty order by id asc;";
+        $a = 0;
+        $results = $connect->query($sql);
+        if ($results == true) {
 
-            $results = $connect->query($sql);
-            if ($results == true) {
-
-                while ($row = $results->fetch_object()) {
-
-                    vypis($row);
+            while ($row = $results->fetch_object()) {
+                if($a < 3){
+                vypis($row);
+                $a++;
                 }
             }
-            ?>
-        </div>
-        <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px" class="doporuceno" id='neco'>
-
-        </div>
-    </div>
-    <?php
-    function vypis($row)
+        }
+        ?>
+      </div>
+      <?php
+      function vypis($row)
     {
         // zde udělej css-ka
 
@@ -79,7 +61,7 @@
     </div>
    
     <div style='float:right;'>
-        <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button><br>
+        <button type='button' class='b' onclick='document.location='vypis($row->id)'>zobrazit postup</button><br>
         <button type='button' class='b'>přidat do oblíbených</button><br>
         <button type='button' class='b'>přečíst později</button> 
     </div>
@@ -96,6 +78,8 @@
     ?>
 
     <script src="text.js"></script>
-</body>
 
+
+
+</body>
 </html>
