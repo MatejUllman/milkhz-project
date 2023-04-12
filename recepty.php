@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +7,21 @@
     <title>Recepty</title>
     <link rel="stylesheet" href="css.css">
     <style>
-        .b {
-            margin: 5px;
+        .b{
+            margin:5px;
         }
     </style>
 </head>
-
 <body style="background-color: rgb(185, 214, 242);">
     <ul>
-        <li><a href="HlavniStrana.php">Domů</a></li>
+        <li><a  href="HlavniStrana.php">Domů</a></li>
         <li><a class="active" href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
         <li><a href="">Na později</a></li>
-        <li><a href="pridavani.html">Přidat vlastní recept</a></li>
+        <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
         <li style="float:right"><a href="">Přihlásit</a></li>
-    </ul>
-    <!-- 
+      </ul>
+      <!-- 
         
       
       
@@ -32,34 +30,33 @@
     
     
     -->
-    <h1 style="margin-left: 5%;">Recepty</h1>
-    <div style="display:flex; ">
-        <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto" id="doporuceno">
-            <?php
-            $connect = new mysqli("localhost", "root", "", "receptar");
+      <h1 style="margin-left: 5%;">Recepty</h1>
+<div style="display:flex; ">
+      <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto" id="doporuceno">
+      <?php
+     $connect = new mysqli("localhost","root","","receptar");
 
-            $sql = "SELECT * FROM recepty order by id asc;";
-
-            $results = $connect->query($sql);
-            if ($results == true) {
-
-                while ($row = $results->fetch_object()) {
-
-                    vypis($row);
-                }
-            }
-            ?>
-        </div>
-        <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px" class="doporuceno" id='neco'>
-
-        </div>
+     $sql = "SELECT * FROM recepty order by id asc;";
+     
+     $results = $connect->query($sql);
+     if($results == true){
+         
+        while($row = $results->fetch_object()){
+           
+            vypis($row);
+        }
+     }  
+    ?>
     </div>
-    <?php
-    function vypis($row)
-    {
-        // zde udělej css-ka
-
-        echo "
+        <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px" class="doporuceno" id='neco'>
+       
+    </div>
+</div>
+<?php 
+ function vypis($row){
+    // zde udělej css-ka
+    
+     echo "
 <div style='border: 2px solid black; width:99.5%; height:160px'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
@@ -89,13 +86,11 @@
     
 </div>
     <!--<p>$row->postup</p>-->
-";
-    }
+";}
 
 
-    ?>
+?>
 
-    <script src="text.js"></script>
+ <script src="text.js"></script>
 </body>
-
 </html>
