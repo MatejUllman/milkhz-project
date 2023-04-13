@@ -10,7 +10,7 @@
          .b{
             height:50px;
             margin-top:50px;
-            background-color: #c1d4ee; 
+            background-color: #dbe8f8; 
             border: none; 
             color: black; 
             padding: 12px 24px; 
@@ -22,12 +22,14 @@
             box-shadow: 2px 2px 4px rgba(0,0,0,0.3); 
         }
         .b:hover{
-            background-color: #7698c2;
+            background-color: #cbddf4;
+            
         }
+        
     </style>
 </head>
-<body style="background-color: rgb(185, 214, 242);">
-    <ul>
+<body style="background-color:#cddded ;">
+    <ul><!-- rgb(185, 214, 242)-->
         <li><a class="active" href="HlavniStrana.php">Domů</a></li>
         <li><a href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>

@@ -12,7 +12,7 @@
         }
     </style>
 </head>
-<body style="background-color: rgb(185, 214, 242);">
+<body style="background-color: #cddded;">
     <ul>
         <li><a  href="HlavniStrana.php">Domů</a></li>
         <li><a class="active" href="recepty.php">Recepty</a></li>
