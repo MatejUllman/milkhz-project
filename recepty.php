@@ -79,6 +79,16 @@
         <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button><br>
         <button type='button' class='b'>přidat do oblíbených</button><br>
         <!--<button type='button' class='b' >přečíst později</button> -->
+        <form action='PridaniNaPozdejiServer.php' method='post'>
+        <input type='hidden' name='id' id='id' value='$row->id'>
+        <input type='hidden' name='postup' id='postup' value='$row->postup'>
+        <input type='hidden' name='obr' id='obr' value='$row->obrazek'>
+        <input type='hidden' name='nazev' id='nazev' value='$row->nazev'>
+        <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
+        <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
+        <input type='submit' value='přečíst později'>
+        </form>
+       
     </div>
 
     
