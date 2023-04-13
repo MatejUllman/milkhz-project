@@ -73,7 +73,7 @@
         <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
         <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
         <input type='submit' value='přečíst později'>
-        </form><br><br>
+        </form><br>
         <button type='button' class='b' onclick=document.location='recepty.php'>Více podrobností</button>
        <!-- <a style='padding:5px;border:2px solid black;' href='recepty.php'>Více podrobností</a> -->
     </div>
