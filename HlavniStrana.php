@@ -66,7 +66,8 @@
     <div style='float:right;margin:10px'> 
         <button type='button' class='b'>přidat do oblíbených</button><br><br>
         <button type='button' class='b'>přečíst později</button><br><br>
-        <a style='padding:5px;border:2px solid black;' href='recepty.php'>Více podrobností</a>
+        <button type='button' class='b' onclick=document.location='recepty.php'>Více podrobností</button>
+       <!-- <a style='padding:5px;border:2px solid black;' href='recepty.php'>Více podrobností</a> -->
     </div>
 
     
