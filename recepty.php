@@ -17,7 +17,7 @@
         <li><a  href="HlavniStrana.php">Domů</a></li>
         <li><a class="active" href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
-        <li><a href="">Na později</a></li>
+        <li><a href="naPozdeji.php">Na později</a></li>
         <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
         <li style="float:right"><a href="">Přihlásit</a></li>
       </ul>
