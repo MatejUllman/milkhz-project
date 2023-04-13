@@ -34,9 +34,9 @@
 <div style="display:flex; ">
       <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto" id="doporuceno">
       <?php
-     $connect = new mysqli("localhost","root","","odlozenerecepty");
+     $connect = new mysqli("localhost","root","","receptar");
 
-     $sql = "SELECT * FROM recepty order by id asc;";
+     $sql = "SELECT * FROM odlozenerecepty order by id asc;";
      
      $results = $connect->query($sql);
      if($results == true){
