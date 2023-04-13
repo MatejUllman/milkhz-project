@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domů</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+        
+    </style>
 </head>
 <body style="background-color: rgb(185, 214, 242);">
     <ul>
@@ -64,8 +67,8 @@
     </div>
    
     <div style='float:right;margin:10px'> 
-        <button type='button' class='b'>přidat do oblíbených</button><br><br>
-        <form action='PridaniNaPozdejiServer.php' method='post'>
+        <!--<button type='button' class='b'>přidat do oblíbených</button><br><br>-->
+        <!--<form action='PridaniNaPozdejiServer.php' method='post'>
         <input type='hidden' name='id' id='id' value='$row->id'>
         <input type='hidden' name='postup' id='postup' value='$row->postup'>
         <input type='hidden' name='obr' id='obr' value='$row->obrazek'>
@@ -73,7 +76,7 @@
         <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
         <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
         <input type='submit' value='přečíst později'>
-        </form><br>
+        </form><br>-->
         <button type='button' class='b' onclick=document.location='recepty.php'>Více podrobností</button>
        <!-- <a style='padding:5px;border:2px solid black;' href='recepty.php'>Více podrobností</a> -->
     </div>
