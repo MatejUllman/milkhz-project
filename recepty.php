@@ -7,7 +7,7 @@
     <title>Recepty</title>
     <link rel="stylesheet" href="css.css">
     <style>
-        .b{
+         .b{
             margin:5px;
         }
     </style>
