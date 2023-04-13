@@ -78,7 +78,7 @@
     <div style='float:right;'>
         <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button><br>
         <button type='button' class='b'>přidat do oblíbených</button><br>
-        <button type='button' class='b' >přečíst později</button> 
+        <!--<button type='button' class='b' >přečíst později</button> -->
     </div>
 
     
