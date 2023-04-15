@@ -25,7 +25,7 @@
         <li><a href="">Oblíbené</a></li>
         <li><a href="naPozdeji.php">Na později</a></li>
         <li><a href="" >Přidat vlastní recept</a></li>
-        <li style="float:right"><a href="" class = "active">Přihlásit</a></li>
+        <li style="float:right"><a href="rozcestnik.html" class = "active">Přihlásit</a></li>
       </ul>
       <div style="width: 50vw;" id="Doporucujeme"><h1 >Přihlásit</h1></div>
       

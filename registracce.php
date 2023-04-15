@@ -25,14 +25,19 @@
         <li><a href="">Oblíbené</a></li>
         <li><a href="naPozdeji.php">Na později</a></li>
         <li><a href="" >Přidat vlastní recept</a></li>
-        <li style="float:right"><a href="" class = "active">Přihlásit</a></li>
+        <li style="float:right"><a href="rozcestnik.html" class = "active">Přihlásit</a></li>
       </ul>
-      <div style="width: 50vw;" id="Doporucujeme"><h1 >Registrovat</h1></div>
+      <div style=" width:300px" id="Doporucujeme"><h1  style="margin-left:30px" >Registrovat</h1></div>
       
-      <div style="height: 500px;width: 50vw;" id="doporuceno">
+      <div style="height: 250px;width: 30vw; margin-top:100px" id="doporuceno">
         <form action="serverPridaniReceptu.php" method="post">
-
-        
+        <label for="heslo">heslo: </label><br>
+        <input type="text" name="heslo" id="heslo"><br>
+        <label for="heslod">potvrzení hesla: </label><br>
+        <input type="text" name="heslod" id="heslod"><br>
+        <label for="email">email: </label><br>
+        <input type="text" name="email" id="email"><br>
+        <input type="submit" value="">
         </form>
       </div>
 
