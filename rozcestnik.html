@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .b{
+            height:50px;
+            margin-top:100px;
+            margin-left: 50px;
+            background-color: #dbe8f8; 
+            border: none; 
+            color: black; 
+            padding: 12px 24px; 
+            text-align: center;
+            display: inline-block; 
+            font-size: 16px; 
+            cursor: pointer;
+            border-radius: 8px; 
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.3); 
+            width: 150px;
+        }
+        .b:hover{
+            background-color: #cbddf4;
+            
+        }
+    </style>
+</head>
+<body style="background-color: #cddded;">
+    <ul>
+        <li><a  href="HlavniStrana.php">Domů</a></li>
+        <li><a href="recepty.php">Recepty</a></li>
+        <li><a href="">Oblíbené</a></li>
+        <li><a href="naPozdeji.php">Na později</a></li>
+        <li><a href="" >Přidat vlastní recept</a></li>
+        <li style="float:right"><a href="" class = "active">Přihlásit</a></li>
+      </ul>
+      <div style=" width:300px" id="Doporucujeme"><h1 style="margin-left:30px">Zvolte možnost</h1></div>
+      
+      <div style="height: 250px;width: 30vw; margin-top:100px" id="doporuceno">
+            <button class="b" style="margin-left:50px" onclick="document.location='registracce.php'">Registrace</button>
+            <button class="b" onclick="document.location='prihlaseni.php'">Přihlášení</button>
+      </div>
+
+
+
+</body>
+</html>
