@@ -12,6 +12,11 @@
         }
         input{
             margin-left: 10px;
+            margin-top:5px;
+        }
+        input[type="submit"]{
+            margin-left: 10px;
+            background-color: #fff;
         }
         textarea{
             margin-left: 10px;
@@ -30,14 +35,14 @@
       <div style=" width:300px" id="Doporucujeme"><h1  style="margin-left:30px" >Registrovat</h1></div>
       
       <div style="height: 250px;width: 30vw; margin-top:100px" id="doporuceno">
-        <form action="serverPridaniReceptu.php" method="post">
+        <form action="" method="post">
         <label for="heslo">heslo: </label><br>
         <input type="text" name="heslo" id="heslo"><br>
         <label for="heslod">potvrzení hesla: </label><br>
         <input type="text" name="heslod" id="heslod"><br>
         <label for="email">email: </label><br>
         <input type="text" name="email" id="email"><br>
-        <input type="submit" value="">
+        <input type="submit" value="Registrovat">
         </form>
       </div>
 
