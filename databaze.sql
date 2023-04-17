@@ -52,4 +52,7 @@ CREATE or replace TABLE `odlozeneRecepty` (
 ALTER TABLE `odlozeneRecepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`id`);
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
-VALUES('Sekaná','Maso vložíme do misky, přidáme kousky rohlíků, majoránku, sůl, pepř, česnek a cokoliv ještě chcete. Směs pořádně promícháme klidně 5 minut. Ze směsi utvořte objekt tvaru doutníkového UFO a vložte do pekáče. Celou sekanou potřeme vodou a předehřejeme troubu na 200 stupňů. Potom stlumte troubu na 150 stupňů a pečte sekanou třeba 45 minut nebo více dle potřeby. Gratuluju máte ůžasnou sekanou.','dost na to, aby jste zhlédli 3 epizody Dva a půl chlapa','zvládneš i ty','sekana.png');
+VALUES('Sekaná','Maso vložíme do misky, přidáme kousky rohlíků, majoránku, sůl, pepř, česnek a cokoliv ještě chcete. Směs pořádně promícháme klidně 5 minut. Ze směsi utvořte objekt tvaru doutníkového UFO a vložte do pekáče. Celou sekanou potřeme vodou a předehřejeme troubu na 200 stupňů. Potom stlumte troubu na 150 stupňů a pečte sekanou třeba 45 minut nebo více dle potřeby. Gratuluju máte úžasnou sekanou.','dost na to, aby jste zhlédli 3 epizody Dva a půl chlapa','zvládneš i ty','sekana.png');
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES('Beef tea','V konvici ohřejeme vodu. Do hrňíčku vložíme 1 až 2 lžíce bovrilu a zamícháme. Necháme odstát 5 minut a máme hotovo.','okolo 10 minut záleží na konvici','lehké','https://cdn.vox-cdn.com/thumbor/JlYl0rO7yyzLEzqZj-NUHJQQOic=/0x0:272x391/1200x0/filters:focal(0x0:272x391):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/3711804/1929495_12997602002_7560_n.0.jpg');
