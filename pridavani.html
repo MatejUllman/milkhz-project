@@ -54,12 +54,15 @@
         setInterval(function(){
             let element = document.getElementById("postup").value;
             let elementt = document.getElementById("postup");
-            if(element.length>30){
+            let i = 40;
+            if(element.length>i){
                
                let text = element.split(" ");
-               if(text.length<2){
-                alert("Takhle dlouhé slova nejsou!!! Nesnaž se to rozbít!!!!");
+               i += 40;
+               if(text.length<3){
+                alert("Nevěřim, že by jsi takto dlouhé slovo(a) použil v receptu na jídlo!!! Nesnaž se to rozbít!!!!");
                 elementt.value = "";
+                i = 40;
                }
             }
             
