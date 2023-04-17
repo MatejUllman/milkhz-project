@@ -50,24 +50,37 @@
       </div>
 
       <script>
-
+       /* let kk = 0;
         setInterval(function(){
             let element = document.getElementById("postup").value;
             let elementt = document.getElementById("postup");
-            let i = 40;
+            let i = 30;
+            let j = 3;
             if(element.length>i){
                
                let text = element.split(" ");
-               i += 40;
-               if(text.length<3){
+              
+               for(let k = 0; kk < text.length; k++){
+                kk++;
+                    if(text[k].length > 16 ){
+                        alert("Nevěřim, že by jsi takto dlouhé slovo(a) použil v receptu na jídlo!!! Nesnaž se to rozbít!!!!");
+                        elementt.value = "";
+                        break;
+                    }
+               }
+               k =0;*/
+              /* if(text.length<j){
                 alert("Nevěřim, že by jsi takto dlouhé slovo(a) použil v receptu na jídlo!!! Nesnaž se to rozbít!!!!");
                 elementt.value = "";
-                i = 40;
+                i = 30;
+                j = 3;
                }
-            }
+               j +=3;
+               i += 30;*/
+            /*}
             
 
-        }, 1000);
+        }, 1000);*/
       </script>
 
 </body>
