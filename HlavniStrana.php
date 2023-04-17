@@ -25,11 +25,14 @@
             background-color: #cbddf4;
             
         }
-        
+        body {
+            background-image: url("pozadi.png");
+            background-repeat: repeat;
+        }
     </style>
 </head>
-<body style="background-color:#cddded ;">
-    <ul><!-- rgb(185, 214, 242)-->
+<body >
+    <ul><!-- rgb(185, 214, 242)  style="background-color:#cddded ;"-->
         <li><a class="active" href="HlavniStrana.php">Domů</a></li>
         <li><a href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
