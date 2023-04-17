@@ -15,6 +15,7 @@
         }
         textarea{
             margin-left: 10px;
+            
         }
     </style>
 </head>
@@ -37,7 +38,7 @@
         <label for="doba">doba přípravy v minutách:</label><br>
         <input type="number" name="doba" id="doba" required><br>
         <label for="postup">postup:</label><br>
-        <textarea name="postup" id="postup" cols="96" rows="14" required></textarea><br>
+        <textarea name="postup" id="postup" cols="96" rows="14" maxlength="400" required></textarea><br>
         <label for="obr">obrázek:</label><br>
         <input type="text" name="obr" id="obr"><br>
         <label >náročnost:</label><br>
@@ -48,7 +49,23 @@
         </form>
       </div>
 
+      <script>
 
+        setInterval(function(){
+            let element = document.getElementById("postup").value;
+            let elementt = document.getElementById("postup");
+            if(element.length>30){
+               
+               let text = element.split(" ");
+               if(text.length<2){
+                alert("Takhle dlouhé slova nejsou!!! Nesnaž se to rozbít!!!!");
+                elementt.value = "";
+               }
+            }
+            
+
+        }, 1000);
+      </script>
 
 </body>
 </html>

@@ -29,6 +29,7 @@
             background-image: url("pozadi.png");
             background-repeat: repeat;
         }
+        
     </style>
 </head>
 <body >
@@ -69,7 +70,7 @@
         // zde udělej css-ka
 
         echo "
-<div style='border-bottom: 5px solid #cddded ; border-right: 4px solid #cddded ; width:100%; height:33.33%'>
+<div style='border-image: url(pozadi.png)30 round ;border-bottom: 10px solid transparent; width:100%; height:33.33%'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
     
