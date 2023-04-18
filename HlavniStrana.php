@@ -53,7 +53,7 @@
        
     </div>
       
-      <div id="doporuceno">
+      <div style="overflow:auto" id="doporuceno">
       <?php
         $connect = new mysqli("localhost", "root", "", "receptar");
 
@@ -63,7 +63,7 @@
         if ($results == true) {
 
             while ($row = $results->fetch_object()) {
-                if($a < 3){
+                if($a < 5){
                 vypis($row);
                 $a++;
                 }
@@ -77,7 +77,7 @@
         // zde udělej css-ka
 
         echo "
-<div style='border-image: url(pozadi.png)30 round ;border-bottom: 6px solid transparent; width:100%; height:33.33%'>
+<div style='border-image: url(pozadi.png)30 round ;border-bottom: 6px solid transparent; width:100%; height:29%; '>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
     
