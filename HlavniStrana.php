@@ -29,6 +29,13 @@
             background-image: url("pozadi.png");
             background-repeat: repeat;
         }
+        div{
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        div::-webkit-scrollbar {
+            display: none;
+        }
         
     </style>
 </head>
@@ -70,7 +77,7 @@
         // zde udělej css-ka
 
         echo "
-<div style='border-image: url(pozadi.png)30 round ;border-bottom: 10px solid transparent; width:100%; height:33.33%'>
+<div style='border-image: url(pozadi.png)30 round ;border-bottom: 6px solid transparent; width:100%; height:33.33%'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
     

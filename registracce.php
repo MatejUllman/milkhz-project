@@ -25,6 +25,13 @@
             background-image: url("pozadi.png");
             background-repeat: repeat;
         }
+        div{
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        div::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 <body style="background-color: #cddded;">
