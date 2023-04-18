@@ -53,12 +53,28 @@
         <input type="password" name="heslod" id="heslod" required><br>
         <label for="email">email: </label><br>
         <input type="email" name="email" id="email" required><br>
-        <input type="submit" value="Registrovat" onclick='alert(`funguje`)'>
+        <input type="submit" value="Registrovat" onclick="kontrolastejnosti(event)">
         </form>
       </div>
 
         <script>
+           
+           
+            function kontrolastejnosti(event){
 
+                let heslo = document.getElementById('heslo').value;
+                let heslod = document.getElementById('heslod').value;
+                
+                if (heslo != heslod) {
+                    event.preventDefault();
+                    alert("Nemáš stejný hesla kokote!!");
+                    
+                } else if (heslo.length < 6) {
+                    event.preventDefault();
+                    alert("Moc krátký kokote!! (musí být delší než 6 znaků)");
+                }
+            }
+            
         </script>
 
 </body>
