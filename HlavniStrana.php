@@ -53,7 +53,7 @@
        
     </div>
       
-      <div style="overflow:auto" id="doporuceno">
+      <div style="" id="doporuceno">
       <?php
         $connect = new mysqli("localhost", "root", "", "receptar");
 
@@ -77,12 +77,12 @@
         // zde udělej css-ka
 
         echo "
-<div style='border-image: url(pozadi.png)30 round ;border-bottom: 6px solid transparent; width:100%; height:29%; '>
+<div style='border-image: url(pozadi.png)30 round ;border-bottom: 6px solid transparent; width:100%; height:24%; '>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
     
     <div style=' width:400px;display:block;float:left'>
-        <img style='float:left' src='$row->obrazek ' width='160px' height='145px'>
+        <img style='float:left' src='$row->obrazek ' width='160px' height='120px'>
         <div style=''>
             <h2 style='display:inline;'>$row->nazev</h2><br>
             <p style='display:inline;'>Náročnost: $row->narocnost</p>
