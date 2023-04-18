@@ -16,7 +16,11 @@
         }
         input[type="submit"]{
             margin-left: 10px;
-            background-color: #fff;
+            background-color: olive;
+            border: none;
+            cursor:pointer;
+            height:30px;
+            width:100px;
         }
         textarea{
             margin-left: 10px;
@@ -72,6 +76,9 @@
                 } else if (heslo.length < 6) {
                     event.preventDefault();
                     alert("Moc krátký kokote!! (musí být delší než 6 znaků)");
+                }else if(heslo.trim() == ""){
+                    event.preventDefault();
+                    alert("Zkoušíš to rozbít nebo co?");
                 }
             }
             
