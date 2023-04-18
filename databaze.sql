@@ -56,3 +56,45 @@ VALUES('Sekaná','Maso vložíme do misky, přidáme kousky rohlíků, majoránk
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
 VALUES('Beef tea','V konvici ohřejeme vodu. Do hrňíčku vložíme 1 až 2 lžíce bovrilu a zamícháme. Necháme odstát 5 minut a máme hotovo.','okolo 10 minut záleží na konvici','lehké','https://cdn.vox-cdn.com/thumbor/JlYl0rO7yyzLEzqZj-NUHJQQOic=/0x0:272x391/1200x0/filters:focal(0x0:272x391):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/3711804/1929495_12997602002_7560_n.0.jpg');
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES('Šunkove závitky','15 min','snadné','
+8 plátků šunky prosciutto crudo
+250g lučiny
+1 lžíce oleje
+sůl, pepř
+2 hrsti rukoly, nasekané na velké kusy + hrst listů k podávání
+olivový olej na zastříknutí
+slunečnicová semínka, nasucho opražená
+
+Plátky prosciutta rozložte na pracovní ploše.
+Lučinu našlehejte v misce s olejem, solí a pepřem.
+Směsí pomažte šunku, navrch rozdělte rukolu a stočte do svitku.
+Zatříkněte olejem, posypte semínky.','');
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES();
