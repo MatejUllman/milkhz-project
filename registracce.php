@@ -60,7 +60,7 @@
         <input type="submit" value="Registrovat" onclick="kontrolastejnosti(event)">
         </form>
       </div>
-
+       
         <script>
            
            

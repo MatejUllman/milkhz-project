@@ -8,6 +8,13 @@ $heslo = $_POST["heslo"];
 $connect = new mysqli("localhost","root","","receptar");
 
 
+
+$selectSQL = "SELECT * FROM receptar WHERE email = '$email';";
+$result = $connect->query($selectSQL);
+if($result->num_rows >0){
+    header('location:registracce.php');
+    die();
+}
 $sql ="INSERT into uzivatel(email,heslo)VALUES('$email','$heslo');";
 
 if($connect->query($sql)){
