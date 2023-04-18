@@ -63,7 +63,7 @@
         if ($results == true) {
 
             while ($row = $results->fetch_object()) {
-                if($a < 5){
+                if($a < 4){
                 vypis($row);
                 $a++;
                 }
