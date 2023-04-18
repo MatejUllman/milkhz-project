@@ -8,7 +8,7 @@ $heslo = $_POST["heslo"];
 $connect = new mysqli("localhost","root","","receptar");
 
 
-$sql ="INSERT into uzivatel(email,heslo)VALUES('$email','$heslo')";
+$sql ="INSERT into uzivatel(email,heslo)VALUES('$email','$heslo');";
 
 if($connect->query($sql)){
     echo "Úspěšně uloženo";
