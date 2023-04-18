@@ -50,7 +50,7 @@
       </ul>
       <div id="Doporucujeme">
         <h1 >Doporučujeme</h1>
-        <p>Zde se objeví první 3 recepty</p>
+       
     </div>
       
       <div id="doporuceno">

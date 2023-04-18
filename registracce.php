@@ -44,7 +44,7 @@
         <li><a href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
         <li><a href="naPozdeji.php">Na později</a></li>
-        <li><a href="" >Přidat vlastní recept</a></li>
+        <li><a href="pridavani.html" >Přidat vlastní recept</a></li>
         <li style="float:right"><a href="rozcestnik.html" class = "active">Přihlásit</a></li>
       </ul>
       <div style=" width:300px" id="Doporucujeme"><h1  style="margin-left:30px" >Registrovat</h1></div>
