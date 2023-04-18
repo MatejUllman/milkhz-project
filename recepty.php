@@ -20,6 +20,10 @@
         }
         div{
             scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        div::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
