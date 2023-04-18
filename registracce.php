@@ -53,11 +53,13 @@
         <input type="text" name="heslod" id="heslod"><br>
         <label for="email">email: </label><br>
         <input type="text" name="email" id="email"><br>
-        <input type="submit" value="Registrovat">
+        <input type="submit" value="Registrovat" onclick='alert(`funguje`)'>
         </form>
       </div>
 
+        <script>
 
+        </script>
 
 </body>
 </html>
