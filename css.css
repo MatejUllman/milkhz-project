@@ -70,4 +70,10 @@ li a:hover:not(.active) {
   float:right;  
   max-width:500px;  
  }
-
+ div{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+div::-webkit-scrollbar {
+  display: none;
+}

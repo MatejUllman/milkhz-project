@@ -16,7 +16,11 @@
         }
         input[type="submit"]{
             margin-left: 10px;
-            background-color: #fff;
+            background-color: olive;
+            border: none;
+            cursor:pointer;
+            height:30px;
+            width:100px;
         }
         textarea{
             margin-left: 10px;
@@ -24,6 +28,13 @@
         body {
             background-image: url("pozadi.png");
             background-repeat: repeat;
+        }
+        div{
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        div::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
@@ -39,18 +50,39 @@
       <div style=" width:300px" id="Doporucujeme"><h1  style="margin-left:30px" >Registrovat</h1></div>
       
       <div style="height: 250px;width: 30vw; margin-top:100px" id="doporuceno">
-        <form action="" method="post">
-        <label for="heslo">heslo: </label><br>
-        <input type="text" name="heslo" id="heslo"><br>
-        <label for="heslod">potvrzení hesla: </label><br>
-        <input type="text" name="heslod" id="heslod"><br>
+        <form action="registraceServer.php" method="post">
+        <label for="heslo" >heslo: </label><br>
+        <input type="password" name="heslo" id="heslo" required><br>
+        <label for="heslod" >potvrzení hesla: </label><br>
+        <input type="password" name="heslod" id="heslod" required><br>
         <label for="email">email: </label><br>
-        <input type="text" name="email" id="email"><br>
-        <input type="submit" value="Registrovat">
+        <input type="email" name="email" id="email" required><br>
+        <input type="submit" value="Registrovat" onclick="kontrolastejnosti(event)">
         </form>
       </div>
 
+        <script>
+           
+           
+            function kontrolastejnosti(event){
 
+                let heslo = document.getElementById('heslo').value;
+                let heslod = document.getElementById('heslod').value;
+                
+                if (heslo != heslod) {
+                    event.preventDefault();
+                    alert("Nemáš stejný hesla kokote!!");
+                    
+                } else if (heslo.length < 6) {
+                    event.preventDefault();
+                    alert("Moc krátký kokote!! (musí být delší než 6 znaků)");
+                }else if(heslo.trim() == ""){
+                    event.preventDefault();
+                    alert("Zkoušíš to rozbít nebo co?");
+                }
+            }
+            
+        </script>
 
 </body>
 </html>
