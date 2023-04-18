@@ -14,6 +14,10 @@
             padding-left:20px;
             padding-right: 20px;
         }
+        body {
+            background-image: url("pozadi.png");
+            background-repeat: repeat;
+        }
     </style>
 </head>
 <body style="background-color: #cddded;">
