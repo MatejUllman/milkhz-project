@@ -12,6 +12,15 @@
         }
         input{
             margin-left: 10px;
+            margin-top:5px;
+        }
+        input[type="submit"]{
+            margin-left: 10px;
+            background-color: olive;
+            border: none;
+            cursor:pointer;
+            height:30px;
+            width:100px;
         }
         textarea{
             margin-left: 10px;
@@ -19,6 +28,13 @@
         body {
             background-image: url("pozadi.png");
             background-repeat: repeat;
+        }
+        div{
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        div::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
@@ -31,13 +47,19 @@
         <li><a href="pridavani.html" >Přidat vlastní recept</a></li>
         <li style="float:right"><a href="rozcestnik.html" class = "active">Přihlásit</a></li>
       </ul>
-      <div style="width: 50vw;" id="Doporucujeme"><h1 >Přihlásit</h1></div>
+      <div style=" width:300px" id="Doporucujeme"><h1 >Přihlásit</h1></div>
       
-      <div style="height: 500px;width: 50vw;" id="doporuceno">
+      <div style="height: 250px;width: 30vw; margin-top:100px;" id="doporuceno">
         <form action="serverPridaniReceptu.php" method="post">
+        <label for="heslo" >heslo: </label><br>
+        <input type="password" name="heslod" id="hesloj" required><br>
+        <label for="email">email: </label><br>
+        <input type="email" name="email" id="email" required><br>
+        <input type="submit" value="Registrovat" onclick="">
+        </form>
 
         
-        </form>
+    
       </div>
 
 

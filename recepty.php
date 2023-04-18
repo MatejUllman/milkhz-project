@@ -79,7 +79,7 @@
     <div style=' width:400px;display:block;float:left'>
         <img style='float:left' src='$row->obrazek ' width='160px' height='145px'>
         <div style=''>
-            <h1 style='display:inline;'>$row->nazev</h1><br>
+            <h2 style='display:inline;'>$row->nazev</h2><br>
             <p style='display:inline;'>Náročnost: $row->narocnost</p>
            
         </div>
