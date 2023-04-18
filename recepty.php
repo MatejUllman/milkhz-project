@@ -61,7 +61,7 @@
     // zde udělej css-ka
     
      echo "
-<div style='border: 2px solid black; width:99.5%; height:160px'>
+<div style='border-image: url(pozadi.png)30 round ;border-bottom: 10px solid transparent; width:100%; height:160px'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
     
