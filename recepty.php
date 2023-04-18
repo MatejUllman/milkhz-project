@@ -10,6 +10,10 @@
          .b{
             margin:5px;
         }
+        .popis{
+            padding-left:20px;
+            padding-right: 20px;
+        }
     </style>
 </head>
 <body style="background-color: #cddded;">
