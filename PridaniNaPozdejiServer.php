@@ -15,7 +15,7 @@ echo $postup;
 echo $id;
 
 $connect = new mysqli("localhost","root","","receptar");
-
+if (isset($_POST["pozdeji"])) {
     $sql ="INSERT into odlozenerecepty(nazev,postup,dobaPripravy,narocnost,obrazek) VALUES('$nazev','$postup','$doba','$nar','$obr');";
     //DELETE FROM recepty WHERE `recepty`.`id` = $id;
     $sqldva = "DELETE FROM recepty WHERE id = $id;";
@@ -27,4 +27,21 @@ $connect = new mysqli("localhost","root","","receptar");
     }
     header('location:recepty.php');
     die();
+    
+}
+if(isset($_POST["oblibene"])){
+   
+
+    $sqltri ="INSERT into oblibenerecepty(nazev,postup,dobaPripravy,narocnost,obrazek) VALUES('$nazev','$postup','$doba','$nar','$obr');";
+    //DELETE FROM recepty WHERE `recepty`.`id` = $id;
+    $sqlctyri = "DELETE FROM recepty WHERE id = $id;";
+    if($connect->query($sqltri)){
+        echo "Úspěšně uloženo";
+    }
+    if($connect->query($sqlctyri)){
+        echo "Úspěšně uloženo";
+    }
+    header('location:recepty.php');
+    die();
+}
 ?>
