@@ -1,3 +1,12 @@
+
+<?php 
+
+    session_start();
+
+    
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,18 +54,31 @@
         <li><a href="">Oblíbené</a></li>
         <li><a href="naPozdeji.php">Na později</a></li>
         <li><a href="pridavani.html" >Přidat vlastní recept</a></li>
-        <li style="float:right"><a href="rozcestnik.html" class = "active">Přihlásit</a></li>
+        <?php 
+        if(isset($_SESSION["isLogged"])){
+            $isLogged = $_SESSION["isLogged"];
+            echo "<li style='float:right'><a href='rozcestnik.html' class = 'active'>Odhlásit</a></li>";
+            
+        }else{
+            $isLogged = false;
+            echo "<li style='float:right'><a href='rozcestnik.html' class = 'active'>Přihlásit</a></li>";
+        }
+
+        ?>
+
+       
       </ul>
       <div style=" width:300px; margin:auto" id="Doporucujeme"><h1 >Přihlášení</h1></div>
       
 
       <div style="height: 250px;width: 30vw; margin-top:100px;" id="doporuceno">
         <form action="registraceServer.php" method="post">
-        <label for="heslo" >heslo: </label><br>
-        <input type="password" name="hesloj" id="hesloj" required><br>
         <label for="email">email: </label><br>
         <input type="email" name="email" id="email" required><br>
-        <input type="submit" value="Registrovat" onclick="">
+        <label for="heslo" >heslo: </label><br>
+        <input type="password" name="hesloj" id="hesloj" required><br>
+        
+        <input type="submit" name="prihlaseni" value="Registrovat" onclick="">
         </form>
 
         
