@@ -53,7 +53,7 @@
        
     </div>
       
-      <div style="" id="doporuceno">
+      <div id="doporuceno">
       <?php
         $connect = new mysqli("localhost", "root", "", "receptar");
 
