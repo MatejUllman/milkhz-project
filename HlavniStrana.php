@@ -9,7 +9,7 @@
     <style>
          .b{
             height:50px;
-            margin-top:50px;
+            margin-top:21%;
             background-color: #dbe8f8; 
             border: none; 
             color: black; 
@@ -35,6 +35,9 @@
         }
         div::-webkit-scrollbar {
             display: none;
+        }
+        button{
+            
         }
         
     </style>
@@ -95,19 +98,9 @@
         
     </div>
    
-    <div style='float:right;margin:10px'> 
-        <!--<button type='button' class='b'>přidat do oblíbených</button><br><br>-->
-        <!--<form action='PridaniNaPozdejiServer.php' method='post'>
-        <input type='hidden' name='id' id='id' value='$row->id'>
-        <input type='hidden' name='postup' id='postup' value='$row->postup'>
-        <input type='hidden' name='obr' id='obr' value='$row->obrazek'>
-        <input type='hidden' name='nazev' id='nazev' value='$row->nazev'>
-        <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
-        <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
-        <input type='submit' value='přečíst později'>
-        </form><br>-->
+    <div style='float:right;margin-right:20px;'> 
         <button type='button' class='b' onclick=document.location='recepty.php'>Více podrobností</button>
-       <!-- <a style='padding:5px;border:2px solid black;' href='recepty.php'>Více podrobností</a> -->
+       
     </div>
 
     

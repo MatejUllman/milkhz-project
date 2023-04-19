@@ -47,13 +47,13 @@
         <li><a href="pridavani.html" >Přidat vlastní recept</a></li>
         <li style="float:right"><a href="rozcestnik.html" class = "active">Přihlásit</a></li>
       </ul>
-      <div style=" width:300px" id="Doporucujeme"><h1 >Přihlásit</h1></div>
+      <div style=" width:300px; margin:auto" id="Doporucujeme"><h1 >Přihlášení</h1></div>
       
 
       <div style="height: 250px;width: 30vw; margin-top:100px;" id="doporuceno">
         <form action="serverPridaniReceptu.php" method="post">
         <label for="heslo" >heslo: </label><br>
-        <input type="password" name="heslod" id="hesloj" required><br>
+        <input type="password" name="hesloj" id="hesloj" required><br>
         <label for="email">email: </label><br>
         <input type="email" name="email" id="email" required><br>
         <input type="submit" value="Registrovat" onclick="">
