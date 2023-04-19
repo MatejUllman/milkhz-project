@@ -49,7 +49,7 @@
     <ul><!-- rgb(185, 214, 242)  style="background-color:#cddded ;"-->
         <li><a class="active" href="HlavniStrana.php">Domů</a></li>
         <li><a href="recepty.php">Recepty</a></li>
-        <li><a href="">Oblíbené</a></li>
+        <li><a href="oblibene.php">Oblíbené</a></li>
         <li><a href="naPozdeji.php">Na později</a></li>
         <li><a href="pridavani.php">Přidat vlastní recept</a></li> 
         <?php 

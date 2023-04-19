@@ -39,8 +39,8 @@
     <ul>
         <li><a  href="HlavniStrana.php">Domů</a></li>
         <li><a  href="recepty.php">Recepty</a></li>
-        <li><a href="oblibene.php">Oblíbené</a></li>
-        <li><a class="active" href="">Na později</a></li>
+        <li><a class="active" href="oblibene.php">Oblíbené</a></li>
+        <li><a href="">Na později</a></li>
         <li><a href="pridavani.php">Přidat vlastní recept</a></li> 
         <?php 
         if(isset($_SESSION["isLogged"])){
