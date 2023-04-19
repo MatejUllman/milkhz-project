@@ -69,6 +69,14 @@
                 let heslo = document.getElementById('heslo').value;
                 let heslod = document.getElementById('heslod').value;
                 
+                for(let i = 0; i < heslod.length; i++){
+                    if(heslod[i] == " "){
+                        event.preventDefault();
+                        alert("Zkoušíš to rozbít nebo co?");
+                    }
+                    
+                }
+
                 if (heslo != heslod) {
                     event.preventDefault();
                     alert("Nemáš stejný hesla kokote!!");
