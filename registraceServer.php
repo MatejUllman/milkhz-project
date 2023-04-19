@@ -1,6 +1,6 @@
 <?php 
 
-if(isset($_POST["login"])){
+if(isset($_POST["registrace"])){
 $email = $_POST["email"];
 $heslo = $_POST["heslo"];
 

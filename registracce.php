@@ -57,7 +57,7 @@
         <input type="password" name="heslod" id="heslod" required><br>
         <label for="email">email: </label><br>
         <input type="email" name="email" id="email" required><br>
-        <input type="submit" value="Registrovat" onclick="kontrolastejnosti(event)">
+        <input type="submit" value="Registrovat" name="registrace" onclick="kontrolastejnosti(event)">
         </form>
       </div>
        
