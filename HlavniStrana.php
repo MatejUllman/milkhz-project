@@ -36,7 +36,9 @@
         div::-webkit-scrollbar {
             display: none;
         }
-       
+        p {
+     font-family: 'Times New Roman', Times, serif;
+        }
         
     </style>
 </head>
