@@ -36,9 +36,7 @@
         div::-webkit-scrollbar {
             display: none;
         }
-        button{
-            
-        }
+       
         
     </style>
 </head>
