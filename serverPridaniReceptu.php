@@ -14,7 +14,7 @@ $sql ="INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) VALUES('
 if($connect->query($sql)){
     echo "Úspěšně uloženo";
 }
-header('location:pridavani.html');
+header('location:pridavani.php');
 die();
 
 
