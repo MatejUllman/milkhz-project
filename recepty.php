@@ -36,7 +36,7 @@
         <li><a class="active" href="recepty.php">Recepty</a></li>
         <li><a href="">Oblíbené</a></li>
         <li><a href="naPozdeji.php">Na později</a></li>
-        <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
+        <li><a href="pridavani.php">Přidat vlastní recept</a></li> 
         <?php 
         if(isset($_SESSION["isLogged"])){
             $isLogged = $_SESSION["isLogged"];
