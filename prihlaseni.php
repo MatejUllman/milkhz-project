@@ -51,7 +51,7 @@
       
 
       <div style="height: 250px;width: 30vw; margin-top:100px;" id="doporuceno">
-        <form action="serverPridaniReceptu.php" method="post">
+        <form action="registraceServer.php" method="post">
         <label for="heslo" >heslo: </label><br>
         <input type="password" name="hesloj" id="hesloj" required><br>
         <label for="email">email: </label><br>

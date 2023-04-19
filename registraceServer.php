@@ -1,8 +1,7 @@
 <?php 
 
+if(isset($_POST["login"])){
 $email = $_POST["email"];
-
-
 $heslo = $_POST["heslo"];
 
 $connect = new mysqli("localhost","root","","receptar");
@@ -24,7 +23,7 @@ if($connect->query($sql)){
 header('location:rozcestnik.html');
 die();
 
-
+}
 
 
 ?>
