@@ -49,6 +49,7 @@
       </ul>
       <div style=" width:300px" id="Doporucujeme"><h1 >Přihlásit</h1></div>
       
+
       <div style="height: 250px;width: 30vw; margin-top:100px;" id="doporuceno">
         <form action="serverPridaniReceptu.php" method="post">
         <label for="heslo" >heslo: </label><br>
