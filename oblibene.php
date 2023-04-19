@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Přečíst později</title>
+    <title>Oblíbené</title>
     <link rel="stylesheet" href="css.css">
     <style>
         .b{
@@ -40,7 +40,7 @@
         <li><a  href="HlavniStrana.php">Domů</a></li>
         <li><a  href="recepty.php">Recepty</a></li>
         <li><a class="active" href="oblibene.php">Oblíbené</a></li>
-        <li><a href="">Na později</a></li>
+        <li><a href="naPozdeji.php">Na později</a></li>
         <li><a href="pridavani.php">Přidat vlastní recept</a></li> 
         <?php 
         if(isset($_SESSION["isLogged"])){
@@ -72,7 +72,7 @@
       <?php
      $connect = new mysqli("localhost","root","","receptar");
 
-     $sql = "SELECT * FROM odlozenerecepty order by id asc;";
+     $sql = "SELECT * FROM oblibenerecepty order by id asc;";
      $i = 0;
      $results = $connect->query($sql);
      if($results == true){
