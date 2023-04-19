@@ -1,10 +1,6 @@
 
 <?php 
-
     session_start();
-
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +19,7 @@
             margin-left: 10px;
             margin-top:5px;
         }
-        input[type="submit"]{
+        #l{
             margin-left: 10px;
             background-color: olive;
             border: none;
@@ -57,7 +53,10 @@
         <?php 
         if(isset($_SESSION["isLogged"])){
             $isLogged = $_SESSION["isLogged"];
-            echo "<li style='float:right'><a href='rozcestnik.html' class = 'active'>Odhlásit</a></li>";
+            echo "<li style='float:right'>
+            <form action='registraceServer.php' method='post'>
+            <input type='submit' id='odh' name='odh' value='Odhlásit' onclick=''>
+            </form></li>";
             
         }else{
             $isLogged = false;
@@ -78,7 +77,7 @@
         <label for="heslo" >heslo: </label><br>
         <input type="password" name="hesloj" id="hesloj" required><br>
         
-        <input type="submit" name="prihlaseni" value="Registrovat" onclick="">
+        <input type="submit" name="prihlaseni" id='l' value="Registrovat" onclick="">
         </form>
 
         

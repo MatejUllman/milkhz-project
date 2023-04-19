@@ -35,7 +35,11 @@ header('location:rozcestnik.html');
 die();
 
 }
-
+if (isset($_POST["odh"])){
+    session_destroy();
+    header('location:HlavniStrana.php');
+        die();
+}
 if(isset($_POST["prihlaseni"])){
     $email = $_POST["email"];
     $heslo = $_POST["hesloj"];

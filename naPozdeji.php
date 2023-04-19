@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +42,20 @@
         <li><a href="">Oblíbené</a></li>
         <li><a class="active" href="">Na později</a></li>
         <li><a href="pridavani.html">Přidat vlastní recept</a></li> 
-        <li style="float:right"><a href="rozcestnik.html">Přihlásit</a></li>
+        <?php 
+        if(isset($_SESSION["isLogged"])){
+            $isLogged = $_SESSION["isLogged"];
+            echo "<li style='float:right'>
+            <form action='registraceServer.php' method='post'>
+            <input type='submit' id='odh' name='odh' value='Odhlásit' onclick=''>
+            </form></li>";
+            
+        }else{
+            $isLogged = false;
+            echo "<li style='float:right'><a href='rozcestnik.html' class = 'active'>Přihlásit</a></li>";
+        }
+
+        ?>
       </ul>
       <!-- 
         
