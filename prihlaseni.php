@@ -96,7 +96,7 @@ li #odh:hover:not(.active) {
         <label for="heslo" >heslo: </label><br>
         <input type="password" name="hesloj" id="hesloj" required><br>
         
-        <input type="submit" name="prihlaseni" id='l' value="Registrovat" onclick="">
+        <input type="submit" name="prihlaseni" id='l' value="Přihlásit" onclick="">
         </form>
 
         
