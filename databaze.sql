@@ -61,6 +61,10 @@ INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek)
 VALUES('Šunkove závitky','8 plátků šunky prosciutto crudo 250g lučiny 1 lžíce oleje sůl, pepř 2 hrsti rukoly, nasekané na velké kusy + hrst listů k podávání olivový olej na zastříknutí slunečnicová semínka, nasucho opražená Plátky prosciutta rozložte na pracovní ploše. Lučinu našlehejte v misce s olejem, solí a pepřem. Směsí pomažte šunku, navrch rozdělte rukolu a stočte do svitku. Zatříkněte olejem, posypte semínky.','15 min','snadné','obrazky/šunkovézávitky.jpg');
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES('Mangová housenka','Housenku něžně ponoříme do vroucí vody a necháme vařit několik minut. Poté přidáme sůl a pepř. Opět necháme vařit. Po 10 minutách můžeme podávat.','No chvíli to bude','střední','https://img.myloview.cz/nalepky/caterpillar-of-rustic-butterfly-cupha-erymanthis-on-leaf-and-white-background-400-187809918.jpg');
+
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
 VALUES('Minivětrníčky','190-200g másla, špetka soli, 500ml vody, 280g hladké mouky, 6-7 vajec, 200ml smetany ke šlehání, 1 sáček vanilkového cukru, čokoláda na ozdobení, V hrnci přiveďte k varu 500ml vody, máslo a špetku soli. Vsypte mouku a za stálého míchání zahřívejte, aby jste získali celistvé těsto,  které se nebude lepit ani na dno ani na vařečku. Přendejte ho do mísy,nechte vyjít páru a postupně vmíchejte celá vejce. Těsto přendejte do cukrářského sáčku s řezanou trubičkou a na plechu vytvořte malá kolečka. Pečte je asi 10 minut v troubě předehřáté na 180°C. Nechte je vychladnout a pak podélně prořízněte (nedořezávejte zcela). Smetanu ušlehejte dotuha,vmíchejte vanilkový cukra vzniklou šlehačkou plňte  minivětrníčky. Přestříkejte rozehřátou čokoládou a ihned podávejte. ','50 min','snadné','obrazky/minivětrníčky.jpg');
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
