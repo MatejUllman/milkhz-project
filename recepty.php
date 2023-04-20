@@ -28,6 +28,25 @@
         div::-webkit-scrollbar {
             display: none;
         }
+        #odh:last-child {
+        border-right: none;
+    }
+
+li #odh {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border:none;
+  background-color:#0353a4;
+  border-left:1px solid #bbb;
+  height:46px;
+}
+
+li #odh:hover:not(.active) {
+  background-color: #111;
+}
     </style>
 </head>
 <body style="background-color: #cddded;">
@@ -47,7 +66,7 @@
             
         }else{
             $isLogged = false;
-            echo "<li style='float:right'><a href='rozcestnik.html' class = 'active'>Přihlásit</a></li>";
+            echo "<li style='float:right'><a href='rozcestnik.html' >Přihlásit</a></li>";
         }
 
         ?>
