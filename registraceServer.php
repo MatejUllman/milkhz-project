@@ -54,7 +54,7 @@ if(isset($_POST["prihlaseni"])){
     if($user->heslo == $heslo){
         echo"přihlášen";
         $_SESSION["isLogged"] = true;
-        header('location:prihlaseni.php');
+        header('location:HlavniStrana.php');
         die();
     }else
         echo"špatné heslo";
