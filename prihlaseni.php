@@ -22,19 +22,18 @@
         
         input[type="submit"]{
             margin-left: 30px;
-            background-color: #f5f5f5;
-            color:blue;
-            border: none;
+            
+           
+            
             cursor:pointer;
             height:30px;
             width:100px;
-            text-decoration: underline;
+            
         }
         input[type="submit"]:hover{
             margin-left: 30px;
-            background-color: #f5f5f5;
-            color:red;
-            border: none;
+           
+           
             cursor:pointer;
             height:30px;
             width:100px;
@@ -77,6 +76,16 @@ li #odh:hover:not(.active) {
     margin:auto;
     padding-top:60px;
 }
+#m{
+    width:40px;
+    height:40px;
+    position: absolute;
+    top: 690px;
+    left:1490px;
+    background-color: none;
+    opacity: 0%;
+    cursor:pointer;
+}
     </style>
 </head>
 <body style="background-color: #cddded;">
@@ -114,13 +123,39 @@ li #odh:hover:not(.active) {
         <label for="heslo" >heslo: </label><br>
         <input type="password" name="hesloj" id="hesloj" required><br>
         
-        <input type="submit" name="prihlaseni" id='l' value="Přihlásit" onclick="">
+        <input type="submit" name="prihlaseni" id='emai' id='l' value="Přihlásit" onclick="">
         </form>
+        <button id='m' onclick="Kontrolaemail()"></button>
+
         </div>
         
     
       </div>
+        <script>
+            function Kontrolaemail(){
+                let email = document.getElementById("emai");
+                
+                email.style.color = 'blue';
+                email.style.backgroundColor = '#f5f5f5';
+                email.style.border = 'none';
+                email.style.textDecoration = 'underline';
 
+                email.addEventListener("mouseleave",function() {
+                email.style.color = 'blue';
+                email.style.backgroundColor = '#f5f5f5';
+                email.style.border = 'none';
+                email.style.textDecoration = 'underline';
+            });
+                
+                email.addEventListener("mouseenter",function() {
+                email.style.color = 'red';
+                email.style.backgroundColor = '#f5f5f5';
+                email.style.border = 'none';
+                email.style.textDecoration = 'underline';
+
+                });
+            }
+        </script>
 
 
 </body>
