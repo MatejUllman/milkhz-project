@@ -18,8 +18,19 @@
             margin-top:5px;
         }
         input[type="submit"]{
-            margin-left: 10px;
-            background-color: olive;
+            margin-left: 30px;
+            background-color: #f5f5f5;
+            color:blue;
+            border: none;
+            cursor:pointer;
+            height:30px;
+            width:100px;
+            text-decoration: underline;
+        }
+        input[type="submit"]:hover{
+            margin-left: 30px;
+            background-color: #f5f5f5;
+            color:red;
             border: none;
             cursor:pointer;
             height:30px;
@@ -58,6 +69,11 @@ li #odh {
 li #odh:hover:not(.active) {
   background-color: #111;
 }
+#k{
+    width:200px;
+    margin:auto;
+    padding-top:40px
+}
     </style>
 </head>
 <body style="background-color: #cddded;">
@@ -85,15 +101,18 @@ li #odh:hover:not(.active) {
       <div style=" width:300px" id="Doporucujeme"><h1  style="margin-left:30px" >Registrovat</h1></div>
       
       <div style="height: 250px;width: 30vw; margin-top:100px" id="doporuceno">
+      <div id='k'>
         <form action="registraceServer.php" method="post">
+        <label for="email">email: </label><br>
+        <input type="email" name="email" id="email" required><br>
         <label for="heslo" >heslo: </label><br>
         <input type="password" name="heslo" id="heslo" required><br>
         <label for="heslod" >potvrzení hesla: </label><br>
         <input type="password" name="heslod" id="heslod" required><br>
-        <label for="email">email: </label><br>
-        <input type="email" name="email" id="email" required><br>
+       
         <input type="submit" value="Registrovat" name="registrace" onclick="kontrolastejnosti(event)">
         </form>
+        </div>
       </div>
        
         <script>

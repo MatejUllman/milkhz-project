@@ -19,9 +19,21 @@
             margin-left: 10px;
             margin-top:5px;
         }
-        #l{
-            margin-left: 10px;
-            background-color: olive;
+        
+        input[type="submit"]{
+            margin-left: 30px;
+            background-color: #f5f5f5;
+            color:blue;
+            border: none;
+            cursor:pointer;
+            height:30px;
+            width:100px;
+            text-decoration: underline;
+        }
+        input[type="submit"]:hover{
+            margin-left: 30px;
+            background-color: #f5f5f5;
+            color:red;
             border: none;
             cursor:pointer;
             height:30px;
@@ -60,6 +72,11 @@ li #odh {
 li #odh:hover:not(.active) {
   background-color: #111;
 }
+#k{
+    width:200px;
+    margin:auto;
+    padding-top:60px;
+}
     </style>
 </head>
 <body style="background-color: #cddded;">
@@ -90,6 +107,7 @@ li #odh:hover:not(.active) {
       
 
       <div style="height: 250px;width: 30vw; margin-top:100px;" id="doporuceno">
+      <div id='k'>
         <form action="registraceServer.php" method="post">
         <label for="email">email: </label><br>
         <input type="email" name="email" id="email" required><br>
@@ -98,7 +116,7 @@ li #odh:hover:not(.active) {
         
         <input type="submit" name="prihlaseni" id='l' value="Přihlásit" onclick="">
         </form>
-
+        </div>
         
     
       </div>
