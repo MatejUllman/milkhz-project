@@ -118,8 +118,8 @@ li #odh:hover:not(.active) {
         <input type="password" name="heslo" id="heslo" required><br>
         <label for="heslod" >potvrzení hesla: </label><br>
         <input type="password" name="heslod" id="heslod" required><br>
-       
-        <input type="submit" value="Registrovat" id='emai'name="registrace" onclick="kontrolastejnosti(event)">
+       <!--TO OPRAVÍŠ FILIPE JE MI TO JEDNO TOHLE JE VYDÍRÁNÍ ZABIJUTI HOUSENKU-->
+        <input type="submit" value="Registrovat" name="registrace" onclick="kontrolastejnosti(event)">
         </form>
         <button id='m' onclick="Kontrolaemail()"></button>
         </div>
