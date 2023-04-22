@@ -37,6 +37,50 @@ die();
 }
 if (isset($_POST["odh"])){
     session_destroy();
+    $connect = new mysqli("localhost","root","","receptar");
+
+    $sqlobl = "SELECT * FROM oblibenerecepty;";
+    $sqlpoz = "SELECT * FROM odlozenerecepty;";
+
+    $nazvy = [];
+    $postup= [];
+    $doba = [];
+    $narocnost = [];
+    $obr = [];
+    $results = $connect->query($sqlobl);
+    if($results == true){
+        
+       while($row = $results->fetch_object()){
+        array_push($nazvy, $row->nazev);
+        array_push($postup, $row->postup);  
+        array_push($doba, $row->dobaPripravy);
+        array_push($narocnost, $row->narocnost);
+        array_push($obr, $row->obrazek);
+        
+       }
+    }
+    $result = $connect->query($sqlpoz);
+    if($result == true){
+        
+       while($row = $result->fetch_object()){
+        array_push($nazvy, $row->nazev);
+        array_push($postup, $row->postup);  
+        array_push($doba, $row->dobaPripravy);
+        array_push($narocnost, $row->narocnost);
+        array_push($obr, $row->obrazek);
+        
+       }
+    }
+    for($i=0; $i<count($nazvy); $i++){
+    $sqlzpet = "INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) VALUES('$nazvy[$i]','$postup[$i]','$doba[$i]','$narocnost[$i]','$obr[$i]');";
+    if($connect->query($sqlzpet)){
+        echo "Úspěšně uloženo";
+    }
+}
+    $sqlsm ="DELETE FROM oblibenerecepty;";
+    $connect->query($sqlsm);
+    $sqlsma ="DELETE FROM odlozenerecepty;";
+    $connect->query($sqlsma);
     header('location:HlavniStrana.php');
         die();
 }
