@@ -115,7 +115,53 @@ li #odh:hover:not(.active) {
  function vypis($row){
     // zde udělej css-ka
     
-     echo "
+    if(isset($_SESSION["isLogged"])){
+        $isLogged = $_SESSION["isLogged"];
+        echo "
+        <div style='border-image: url(pozadi.png)30 round ;border-bottom: 10px solid transparent; width:100%; height:160px'>
+            <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
+        
+            
+            <div style=' width:400px;display:block;float:left'>
+                <img style='float:left' src='$row->obrazek ' width='160px' height='145px'>
+                <div style=''>
+                    <h2 style='display:inline;'>$row->nazev</h2><br>
+                    <p style='display:inline;'>Náročnost: $row->narocnost</p>
+                   
+                </div>
+                <div style=''>
+                <p>doba přípravy: $row->dobaPripravy</p>
+                
+                </div>
+                
+            </div>
+           
+            <div style='float:right;'>
+                <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button><br>
+               
+                <form action='PridaniNaPozdejiServer.php' method='post'>
+                <input type='hidden' name='id' id='id' value='$row->id'>
+                <input type='hidden' name='postup' id='postup' value='$row->postup'>
+                <input type='hidden' name='obr' id='obr' value='$row->obrazek'>
+                <input type='hidden' name='nazev' id='nazev' value='$row->nazev'>
+                <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
+                <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
+                <input type='submit' name='pozdeji' value='přečíst později'><br>
+                <input type='submit' name='oblibene' value='Přidat do oblíbených'>
+                </form>
+               
+            </div>
+        
+            
+        
+            
+        </div>
+            <!--<p>$row->postup</p>-->
+        ";
+        
+    }else{
+        $isLogged = false;
+        echo "
 <div style='border-image: url(pozadi.png)30 round ;border-bottom: 10px solid transparent; width:100%; height:160px'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>
 
@@ -136,8 +182,7 @@ li #odh:hover:not(.active) {
    
     <div style='float:right;'>
         <button type='button' class='b' onclick='vypis($row->id)'>zobrazit postup</button><br>
-       <!-- <button type='button' class='b'>přidat do oblíbených</button><br>-->
-        <!--<button type='button' class='b' >přečíst později</button> -->
+       
         <form action='PridaniNaPozdejiServer.php' method='post'>
         <input type='hidden' name='id' id='id' value='$row->id'>
         <input type='hidden' name='postup' id='postup' value='$row->postup'>
@@ -145,8 +190,8 @@ li #odh:hover:not(.active) {
         <input type='hidden' name='nazev' id='nazev' value='$row->nazev'>
         <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
         <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
-        <input type='submit' name='pozdeji' value='přečíst později'><br>
-        <input type='submit' name='oblibene' value='Přidat do oblíbených'>
+        <!--<input type='submit' name='pozdeji' value='přečíst později'><br>-->
+       <!-- <input type='submit' name='oblibene' value='Přidat do oblíbených'>-->
         </form>
        
     </div>
@@ -156,7 +201,9 @@ li #odh:hover:not(.active) {
     
 </div>
     <!--<p>$row->postup</p>-->
-";}
+";
+    }
+     }
 
 
 ?>
