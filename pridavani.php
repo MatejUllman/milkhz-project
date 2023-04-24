@@ -77,7 +77,7 @@ li #odh:hover:not(.active) {
         <label for="doba">doba přípravy v minutách:</label><br>
         <input type="number" name="doba" id="doba" required><br>
         <label for="postup">postup:</label><br>
-        <textarea name="postup" id="postup" cols="96" rows="14" maxlength="400" required></textarea><br>
+        <textarea style="max-width: 100vh; max-height:200px" name="postup" id="postup" cols="96" rows="14" maxlength="400" required></textarea><br>
         <label for="obr">obrázek:</label><br>
         <input type="text" name="obr" id="obr"><br>
         <label >náročnost:</label><br>
