@@ -54,7 +54,7 @@ if(isset($_POST["ZoblibeneDopozdeji"])){
     if($connect->query($sqlsest)){
         echo "Úspěšně uloženo";
     }
-    header('location:recepty.php');
+    header('location:oblibene.php');
     die();
 }
 if (isset($_POST["ZpozdejiDooblibene"])) {
@@ -67,7 +67,7 @@ if (isset($_POST["ZpozdejiDooblibene"])) {
     if($connect->query($sqlosm)){
         echo "Úspěšně uloženo";
     }
-    header('location:recepty.php');
+    header('location:naPozdeji.php');
     die();
 }if(isset($_POST["ZoblibeneDoreceptu"])){
     $sqldevet ="INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) VALUES('$nazev','$postup','$doba','$nar','$obr');";
@@ -79,7 +79,7 @@ if (isset($_POST["ZpozdejiDooblibene"])) {
     if($connect->query($sqldeset)){
         echo "Úspěšně uloženo";
     }
-    header('location:recepty.php');
+    header('location:oblibene.php');
     die();
 }if(isset($_POST["ZpozdejiDoreceptu"])){
     $sqljedenact ="INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) VALUES('$nazev','$postup','$doba','$nar','$obr');";
@@ -91,7 +91,7 @@ if (isset($_POST["ZpozdejiDooblibene"])) {
     if($connect->query($sqldvanact)){
         echo "Úspěšně uloženo";
     }
-    header('location:recepty.php');
+    header('location:naPozdeji.php');
     die();
 }
 ?>

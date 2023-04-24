@@ -124,15 +124,10 @@ li #odh:hover:not(.active) {
     <div style=' width:400px;display:block;float:left'>
         <img style='float:left' src='$row->obrazek ' width='160px' height='120px'>
         <div style=''>
-            <h2 style='display:inline;'>$row->nazev</h2><br>
-            <p style='display:inline;'>Náročnost: $row->narocnost</p>
-           
+            <h2 style='display:inline;padding-left:10px'>$row->nazev</h2><br><br>
+            <p style='display:inline;padding-left:10px'>Náročnost: $row->narocnost</p><br>
+            <p style='padding-left:10px;display:inline'>doba přípravy: $row->dobaPripravy</p>
         </div>
-        <div style=''>
-        <p>doba přípravy: $row->dobaPripravy</p>
-        
-        </div>
-        
     </div>
    
     <div style='float:right;margin-right:20px;'> 

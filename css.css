@@ -80,3 +80,20 @@ div::-webkit-scrollbar {
 p {
   font-family: 'Times New Roman', Times, serif;
 }
+.b{
+  height:50px;
+  margin-top:21%;
+  background-color: #dbe8f8; 
+  border: none; 
+  color: black; 
+  padding: 12px 24px; 
+  text-align: center;
+  display: inline-block; 
+  font-size: 16px; 
+  cursor: pointer;
+  border-radius: 8px; 
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3); 
+}
+.b:hover{
+  background-color: #cbddf4;
+}

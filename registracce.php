@@ -10,10 +10,29 @@
     <title>Registrace</title>
     <link rel="stylesheet" href="css.css">
     <style>
+         .b {
+            height: 50px;
+            width: 200px;
+            margin-top: 10%;
+            background-color: #dbe8f8;
+            border: none;
+            color: black;
+            padding: 12px 24px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .b:hover {
+            background-color: #cbddf4;
+        }
         label{
             margin-left: 10px;
         }
-        input{
+       /* input{
             margin-left: 10px;
             margin-top:5px;
         }
@@ -34,7 +53,7 @@
             cursor:pointer;
             height:30px;
             width:100px;
-        }
+        }*/
         textarea{
             margin-left: 10px;
         }
@@ -77,8 +96,6 @@ li #odh:hover:not(.active) {
     width:40px;
     height:40px;
     position: absolute;
-    top: 690px;
-    left:1490px;
     background-color: none;
     opacity: 0%;
     cursor:pointer;
@@ -119,7 +136,7 @@ li #odh:hover:not(.active) {
         <label for="heslod" >potvrzení hesla: </label><br>
         <input type="password" name="heslod" id="heslod" required><br>
        <!--TO OPRAVÍŠ FILIPE JE MI TO JEDNO TOHLE JE VYDÍRÁNÍ ZABIJUTI HOUSENKU-->
-        <input type="submit" value="Registrovat" id='emai' name="registrace" onclick="kontrolastejnosti(event)">
+        <input type="submit" value="Registrovat" class='b' id='emai' name="registrace" onclick="kontrolastejnosti(event)">
         </form>
         <button id='m' onclick="Kontrolaemail()"></button>
         </div>
@@ -143,11 +160,11 @@ li #odh:hover:not(.active) {
 
                 if (heslo != heslod) {
                     event.preventDefault();
-                    alert("Nemáš stejný hesla kokote!!");
+                    alert("Nemáš stejný hesla!!");
                     
                 } else if (heslo.length < 6) {
                     event.preventDefault();
-                    alert("Moc krátký kokote!! (musí být delší než 6 znaků)");
+                    alert("Moc krátký heslo!! (musí být delší než 6 znaků)");
                 }else if(heslo.trim() == ""){
                     event.preventDefault();
                     alert("Zkoušíš to rozbít nebo co?");
