@@ -77,7 +77,11 @@ INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek)
 VALUES('Zeleninová polévka',' 1 lžíce másla, 3 lžíce dětské krupičky, 1 vejce, 1 l vývaru, sůl, pepř, 1 lžička petrželky, 1 lžička libečku, 1/4 lžičky drceného kmínu, 3 lžíce nastrouhané kořenové zeleniny, 2 lžíce hrášku, 2 stroužky česneku, Na rozehřáté máslo dáme krupičku a opražíme za stálého míchání. Vklepneme vajíčko a mícháme a vařečkou oddělujeme nočky. Zalijeme vývarem, přidáme koření, zeleninu a povaříme. Nakonec přidáme hrášek a prolisovaný česnek.','45 min','snadné','obrazky/Zeleninová polévka.jpg');
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
+VALUES('Smažené omelety','Matematik  fyzika jsou nejlepší předměty potvrdil výzkum amerických vědců.','30 min','sřední','obrazky/l.jpg');
+
+INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
 VALUES('Bramborové placky',' 420 g brambor uvařených ve slupce, 1 vejce, 250 g kysaného zelí, 150 -200 g hladké mouky (podle potřeby), sůl, pepř, 1 cibule, 150 g uzeného masa (nebo uzeniny), 1 jarní cibulka, sádlo (nebo olej), Na tuku osmahneme nakrájenou cibuli, přidáme na kostičky nakrájené uzené maso a orestujeme. Brambory oloupeme a nastrouháme na jemném struhadle. Přidáme vymačkané a nakrájené zelí, vejce, sůl, pepř a jarní cibulku nakrájenou najemno i se zelenou částí. Přidáme orestovanou cibuli s uzeným masem, mouku a propracujeme. Tvoříme placky a na malém množství tuku osmažíme z obou stran.','60 min','sřední','obrazky/bramborové placky.jpg');
+
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
 VALUES('Kuřecí čtvrty "uzené"',' 3-4 kuřecí čtvrtky, praganda - na 1 kg masa 20 g (nebo běžná sůl+1/2 lžičky moučkového cukru), tekutý kouř, Maso osolíme, pořádně vetřeme sůl. Uložíme do pevně uzavíratelné misky s poklopem. Necháme v lednici 3-4 dny. Poté potřeme mašlovačkou uzeným kouřem a opět uzavřeme na dva dny do lednice. Připravíme pomalý hrnec s mřížkou nebo pařáčkem. Maso uložíme, potřeme opět kouřem a pomalíme 5-6 hodin na low. Během pomalení ještě 2x potřeme kouřem. A je hotovo, maso je šťavnaté a jako dort.','315min','obtížné','obrazky/kuřecí čtvrty uzené.jpg');
