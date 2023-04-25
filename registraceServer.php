@@ -1,15 +1,5 @@
 <?php 
-
-
-
     session_start();
-
-    
-        
-    
-
-
-
 
 if(isset($_POST["registrace"])){
 $email = $_POST["email"];
