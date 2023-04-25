@@ -103,7 +103,8 @@ session_start();
     -->
     <h1 style="margin-left: 5%;">Recepty</h1>
     <div style="display:flex; ">
-        <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto" id="doporuceno">
+        <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto"
+            id="doporuceno">
             <?php
             $connect = new mysqli("localhost", "root", "", "receptar");
 
@@ -135,7 +136,7 @@ session_start();
     function vypis($row)
     {
         // zde udělej css-ka
-
+    
         if (isset($_SESSION["isLogged"])) {
             $isLogged = $_SESSION["isLogged"];
             echo "

@@ -109,7 +109,8 @@ session_start();
     -->
     <h1 style="margin-left: 5%;">Recepty na později</h1>
     <div style="display:flex; ">
-        <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto" id="doporuceno">
+        <div style="margin-left: 5%; display: inline-block; display:flex; flex-direction: column; overflow:auto"
+            id="doporuceno">
             <?php
             $connect = new mysqli("localhost", "root", "", "receptar");
 
@@ -140,7 +141,7 @@ session_start();
     function vypis($row)
     {
         // zde udělej css-ka
-
+    
         echo "
 <div style='border-image: url(pozadi.png)30 round ;border-bottom: 10px solid transparent; width:100%; height:160px'>
     <input type='hidden' name='$row->id' id='$row->id' value='$row->postup'>

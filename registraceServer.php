@@ -1,6 +1,6 @@
 <?php 
     session_start();
-
+    $emaill="";
 if(isset($_POST["registrace"])){
 $email = $_POST["email"];
 $heslo = $_POST["heslo"];
@@ -37,6 +37,12 @@ if (isset($_POST["odh"])){
     $doba = [];
     $narocnost = [];
     $obr = [];
+    $idobl = [];
+    $idodl = [];
+
+    $receptysql = "UPDATE uzivatel SET ulezenerecepty = 'neco' WHERE email = '$_SESSION[email]';";
+    $result = $connect->query($receptysql);
+
     $results = $connect->query($sqlobl);
     if($results == true){
         
@@ -46,6 +52,7 @@ if (isset($_POST["odh"])){
         array_push($doba, $row->dobaPripravy);
         array_push($narocnost, $row->narocnost);
         array_push($obr, $row->obrazek);
+        array_push($idobl, "$row->nazev, ");
         
        }
     }
@@ -58,7 +65,7 @@ if (isset($_POST["odh"])){
         array_push($doba, $row->dobaPripravy);
         array_push($narocnost, $row->narocnost);
         array_push($obr, $row->obrazek);
-        
+        array_push($idodl, "$row->nazev, ");
        }
     }
     for($i=0; $i<count($nazvy); $i++){
@@ -67,6 +74,7 @@ if (isset($_POST["odh"])){
         echo "Úspěšně uloženo";
     }
 }
+    
     $sqlsm ="DELETE FROM oblibenerecepty;";
     $connect->query($sqlsm);
     $sqlsma ="DELETE FROM odlozenerecepty;";
@@ -74,13 +82,14 @@ if (isset($_POST["odh"])){
     header('location:HlavniStrana.php');
         die();
 }
-if(isset($_POST["prihlaseni"])){
-    $email = $_POST["email"];
-    $heslo = $_POST["hesloj"];
 
+if(isset($_POST["prihlaseni"])){
+    $emaill = $_POST["email"];
+    $heslo = $_POST["hesloj"];
+    $_SESSION["email"] = $emaill;
     $connect = new mysqli("localhost","root","","receptar");
 
-    $selectSQL = "SELECT * FROM uzivatel WHERE email = '$email';";
+    $selectSQL = "SELECT * FROM uzivatel WHERE email = '$emaill';";
 
     $result = $connect->query($selectSQL);
     if($result->num_rows >0){

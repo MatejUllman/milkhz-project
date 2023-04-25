@@ -36,7 +36,7 @@ session_start();
             margin-left: 10px;
         }
 
-      /*  input {
+        /*  input {
             margin-left: 10px;
             margin-top: 5px;
         }
@@ -169,14 +169,14 @@ session_start();
             email.style.border = 'none';
             email.style.textDecoration = 'underline';
 
-            email.addEventListener("mouseleave", function() {
+            email.addEventListener("mouseleave", function () {
                 email.style.color = 'blue';
                 email.style.backgroundColor = '#f5f5f5';
                 email.style.border = 'none';
                 email.style.textDecoration = 'underline';
             });
 
-            email.addEventListener("mouseenter", function() {
+            email.addEventListener("mouseenter", function () {
                 email.style.color = 'red';
                 email.style.backgroundColor = '#f5f5f5';
                 email.style.border = 'none';
