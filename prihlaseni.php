@@ -168,7 +168,7 @@ session_start();
             email.style.backgroundColor = '#f5f5f5';
             email.style.border = 'none';
             email.style.textDecoration = 'underline';
-
+            email.style.boxShadow = 'none';
             email.addEventListener("mouseleave", function () {
                 email.style.color = 'blue';
                 email.style.backgroundColor = '#f5f5f5';

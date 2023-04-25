@@ -133,7 +133,8 @@ session_start();
             }
             ?>
         </div>
-        <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px" class="doporuceno" id='neco'>
+        <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px;word-wrap: break-word;"
+            class="doporuceno" id='neco'>
 
         </div>
     </div>
