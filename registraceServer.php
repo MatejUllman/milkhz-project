@@ -104,5 +104,6 @@ if(isset($_POST["prihlaseni"])){
 
 
 }
-
+//jsem kokot a dělám commity každý řádek 🤓☝️
 ?>
+
