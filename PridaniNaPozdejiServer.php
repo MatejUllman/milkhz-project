@@ -17,7 +17,7 @@ echo $id;*/
 $connect = new mysqli("localhost", "root", "", "receptar");
 if (isset($_POST["pozdeji"])) {
     /* $sql = "INSERT into odlozenerecepty(nazev,postup,dobaPripravy,narocnost,obrazek) VALUES('$nazev','$postup','$doba','$nar','$obr');";
-    //DELETE FROM recepty WHERE `recepty`.`id` = $id;
+    DELETE FROM recepty WHERE `recepty`.`id` = $id;
     $sqldva = "DELETE FROM recepty WHERE id = $id;";
     if ($connect->query($sql)) {
     echo "Úspěšně uloženo";
