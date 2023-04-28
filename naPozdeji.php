@@ -113,7 +113,51 @@ session_start();
             id="doporuceno">
             <?php
             $connect = new mysqli("localhost", "root", "", "receptar");
+            $sqlprid = "";
+            if (isset($_SESSION["email"])) {
 
+
+                $sqlprid = "SELECT ulozenereceptyyy FROM uzivatel where email = '$_SESSION[email]'";
+
+                $text = "";
+                $poletext = [];
+                $l = 0;
+
+                $results = $connect->query($sqlprid);
+                if ($results == true) {
+                    while ($row = $results->fetch_object()) {
+                        $text .= $row->ulozenereceptyyy;
+
+
+
+                    }
+                    $poletext = explode(",", $text);
+
+
+                }
+
+                //{$poletext[$j]}
+                for ($j = 0; $j < count($poletext) - 1; $j++) {
+                    $t = trim($poletext[$j]);
+
+                    $sqli = "SELECT * FROM recepty where nazev Like '$t' && kde like 'ne';";
+                    $receptysql = "UPDATE recepty SET email ='ano' where nazev Like '$t';";
+                    $results = $connect->query($sqli);
+                    $resulty = $connect->query($receptysql);
+
+
+                    $row = $results->fetch_object();
+                    if ($row != null) {
+                        vypis($row);
+                    }
+                    // if ($results == true) {
+            
+                    // }
+                }
+                echo $_SESSION["text"];
+            }
+
+            //SELECT * FROM odlozenerecepty order by id asc;
             $sql = "SELECT * FROM odlozenerecepty order by id asc;";
             $i = 0;
             $results = $connect->query($sql);
@@ -121,16 +165,19 @@ session_start();
 
                 while ($row = $results->fetch_object()) {
                     $i++;
+
                     vypis($row);
                 }
-                if ($i == 0) {
-                    echo "<div id='nk'>
-                    <h1>Nepřidali jste sem žádné recepty!!!</h1>
+                /*if ($i == 0 || $l == 0) {
+                echo "<div id='nk'>
+                <h1>Nepřidali jste sem žádné recepty!!!</h1>
                 </div>
-                  ";
-                }
+                ";
+                }*/
+
                 $i = 0;
             }
+
             ?>
         </div>
         <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px;word-wrap: break-word;"
@@ -170,7 +217,7 @@ session_start();
         <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
         <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
         <input type='submit' class='b' name='ZpozdejiDooblibene' value='Přidat do oblíbených'><br>
-        <input type='submit' class='b' name='ZpozdejiDoreceptu' value='Odstranit'>
+        
         </form>
     </div>
 

@@ -113,7 +113,56 @@ session_start();
             id="doporuceno">
             <?php
             $connect = new mysqli("localhost", "root", "", "receptar");
+            if (isset($_SESSION["email"])) {
+                $sqlprid = "SELECT ulezenereceptyy FROM uzivatel where email = '$_SESSION[email]';";
+                $text = "";
+                $poletext = [];
+                $l = 0;
 
+
+                $results = $connect->query($sqlprid);
+                if ($results == true) {
+                    while ($row = $results->fetch_object()) {
+                        $text .= $row->ulezenereceptyy;
+
+
+
+                    }
+                    $poletext = explode(",", $text);
+
+
+                }
+                /* $cislo;
+                for ($in = 0; $in < count($poletext) - 1; $in++) {
+                for ($l = 1; $l < count($poletext) - 1; $l++) {
+                if ($poletext[$in] == $poletext[$l]) {
+                $cislo = $l;
+                }
+                }
+                }
+                */
+                for ($j = 0; $j < count($poletext) - 1; $j++) {
+                    $t = trim($poletext[$j]);
+
+                    $sqli = "SELECT * FROM recepty where nazev Like '$t' && kde like 'ano';";
+                    $receptysql = "UPDATE recepty SET email ='ano' where nazev Like '$t';";
+
+                    $resulty = $connect->query($receptysql);
+                    $results = $connect->query($sqli);
+
+                    $row = $results->fetch_object();
+                    // if ($cislo != $j)
+            
+                    if ($row != null) {
+
+                        vypis($row);
+                    }
+
+
+
+                }
+
+            }
             $sql = "SELECT * FROM oblibenerecepty order by id asc;";
             $i = 0;
             $results = $connect->query($sql);
@@ -124,10 +173,10 @@ session_start();
                     vypis($row);
                 }
                 if ($i == 0) {
-                    echo "<div id='nk'>
+                    /* echo "<div id='nk'>
                     <h1>Nepřidali jste sem žádné recepty!!!</h1>
-                </div>
-                  ";
+                    </div>
+                    ";*/
                 }
                 $i = 0;
             }
@@ -170,7 +219,7 @@ session_start();
         <input type='hidden' name='nar' id='nar' value='$row->narocnost'>
         <input type='hidden' name='dob' id='dob' value='$row->dobaPripravy'>
         <input type='submit' class='b' name='ZoblibeneDopozdeji' value='přečíst později'><br>
-        <input type='submit' class='b' name='ZoblibeneDoreceptu' value='Odstranit'>
+        
        
         </form>
     </div>

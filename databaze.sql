@@ -10,7 +10,9 @@ USE `receptar`;
 CREATE or replace TABLE `uzivatel` (
   `email` varchar(30) NOT NULL,
   `heslo` varchar(30) NOT NULL,
-  `id` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `ulezenereceptyy` varchar(600) not null,
+  `ulozenereceptyyy` varchar(600) not null
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ALTER TABLE `uzivatel` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`id`); 
@@ -21,12 +23,14 @@ CREATE or replace TABLE `recepty` (
   `postup` varchar(2000) NOT NULL,
   `dobaPripravy` varchar(80) NOT NULL,
   `narocnost` varchar(30) not null,
-  `obrazek` varchar(500) not null
+  `obrazek` varchar(500) not null,
+  `email` varchar(60) not null,
+  `kde` varchar(30) not null
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ALTER TABLE `recepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`id`); 
-
+-- update recepty set recepty.email=''; 
 CREATE or replace TABLE `oblibeneRecepty` (
   `id` int(11) NOT NULL,
   `nazev` varchar(30) NOT NULL,
@@ -52,7 +56,7 @@ CREATE or replace TABLE `odlozeneRecepty` (
 ALTER TABLE `odlozeneRecepty` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`id`);
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
-VALUES('Sekaná','Maso vložíme do misky, přidáme kousky rohlíků, majoránku, sůl, pepř, česnek a cokoliv ještě chcete. Směs pořádně promícháme klidně 5 minut. Ze směsi utvořte objekt tvaru doutníkového UFO a vložte do pekáče. Celou sekanou potřeme vodou a předehřejeme troubu na 200 stupňů. Potom stlumte troubu na 150 stupňů a pečte sekanou třeba 45 minut nebo více dle potřeby. Gratuluju máte úžasnou sekanou.','dost na to, aby jste zhlédli 3 epizody Dva a půl chlapa','zvládneš i ty','obrazky/sekana.png');
+VALUES('Sekaná','Maso vložíme do misky, přidáme kousky rohlíků, majoránku, sůl, pepř, česnek a cokoliv ještě chcete. Směs pořádně promícháme klidně 5 minut. Ze směsi utvořte objekt tvaru doutníkového UFO a vložte do pekáče. Celou sekanou potřeme vodou a předehřejeme troubu na 200 stupňů. Potom stlumte troubu na 150 stupňů a pečte sekanou třeba 45 minut nebo více dle potřeby. Gratuluju máte úžasnou sekanou.','dost na to, aby jste zhlédli dvě a půl epizody Dva a půl chlapa','zvládneš i ty','obrazky/sekana.png');
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
 VALUES('Beef tea','V konvici ohřejeme vodu. Do hrňíčku vložíme 1 až 2 lžíce bovrilu a zamícháme. Necháme odstát 5 minut a máme hotovo.','okolo 10 minut záleží na konvici','lehké','https://cdn.vox-cdn.com/thumbor/JlYl0rO7yyzLEzqZj-NUHJQQOic=/0x0:272x391/1200x0/filters:focal(0x0:272x391):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/3711804/1929495_12997602002_7560_n.0.jpg');
@@ -94,3 +98,5 @@ VALUES('Svíčková z jelena',' 500 g jeleního masa, 1 cibule, 1/2 celeru, 4 mr
 
 INSERT into recepty(nazev,postup,dobaPripravy,narocnost,obrazek) 
 VALUES('Rajská omáčka',' 1 litr rajčatové šťávy (100%), 1/4 litru vývaru (hovězí), 1 lžíce cukru, 2 lžíce hladké mouky, 100 g másla, 1 větší cibule, 5 hřebíčků, 4 kuličky nového koření, 2 bobkové listy, sůl, pepř, V hrnci rozpustíme máslo, přidáme jemně nasekanou cibuli a necháme ji zesklovatět. Poté přidáme hladkou mouku a vytvoříme světlou cibulovo-máslovou jíšku. Jíšku zalijeme vývarem a dobře rozmícháme do hladka. Hned poté přidáme rajskou šťávu, koření a necháme 20 minut probublávat. V průběhu vaření musíme omáčku pravidelně promíchávat, ať se nechytá ke dnu. Pokud je třeba, hustotu omáčky můžeme ještě upravit přidáním vývaru. Tipy, díky kterým bude vaše rajská dokonalá: Po provaření omáčky vyjmeme koření a pro docílení dokonalé jemnosti omáčku rozmixujeme ponorným mixérem zcela do hladka. Dochutíme dle potřeby cukrem a solí. Podáváme s vařeným hovězím masem (krk, žebro, loupaná plec) a houskovým knedlíkem.','100 minut','střední','obrazky/Rajská omáčka.jpg');
+
+INSERT INTO `uzivatel`(`email`, `heslo`, `id`) VALUES ('matej@centrum.cz','kolomaz','1'); 

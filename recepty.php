@@ -108,24 +108,37 @@ session_start();
             <?php
             $connect = new mysqli("localhost", "root", "", "receptar");
 
-            $sql = "SELECT * FROM recepty order by id asc;";
-            $i = 0;
-            $results = $connect->query($sql);
-            if ($results == true) {
 
+            $i = 0;
+            if (isset($_SESSION["email"])) {
+                $sql = "SELECT * FROM recepty where email not like 'ano';";
+                $results = $connect->query($sql);
                 while ($row = $results->fetch_object()) {
                     $i++;
                     vypis($row);
                 }
-                if ($i == 0) {
-                    echo "<div id='nk'>
-                        <h1>Nepřidali jste sem žádné recepty!!!</h1><br>
-                        <h1>Nebo je máte ve uložené na později!!!</h1>
-                    </div>
-                      ";
-                }
-                $i = 0;
+
             }
+            if (!isset($_SESSION["email"])) {
+                $sql = "SELECT * FROM recepty ;";
+                $results = $connect->query($sql);
+                if ($results == true) {
+
+                    while ($row = $results->fetch_object()) {
+                        $i++;
+                        vypis($row);
+                    }
+                    if ($i == 0) {
+                        echo "<div id='nk'>
+                            <h1>Nepřidali jste sem žádné recepty!!!</h1><br>
+                            <h1>Nebo je máte ve uložené na později!!!</h1>
+                        </div>
+                          ";
+                    }
+                    $i = 0;
+                }
+            }
+
             ?>
         </div>
         <div style="float:right;background-color: whitesmoke;margin:auto;max-width:500px; word-wrap: break-word;"
